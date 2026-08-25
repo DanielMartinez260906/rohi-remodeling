@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohi Remodeling | Luxury Residential Transformation & Remodeling</title>
+  <meta name="description" content="High-end home remodeling and interior design firm. Specialists in kitchens, luxury bathrooms, and full-home renovations.">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       DARK CONTRAST HEADER WITH MULTI-LANGUAGE SWITCHER
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo-wrapper">
+        <div class="logo-img-box">
+          <img src="./isotipo-sin fondo.png" alt="Rohi Remodeling Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ROHI</span>
+          <span class="brand-sub">REMODELING</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#servicios" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#transformacion" class="nav-link" data-i18n="nav_transform">Before & After</a>
+        <a href="#presupuestador" class="nav-link" data-i18n="nav_estimator">Estimator</a>
+        <a href="#proyectos" class="nav-link" data-i18n="nav_projects">Projects</a>
+        <a href="#metodo" class="nav-link" data-i18n="nav_process">Process</a>
+        <a href="#contacto" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <!-- Multi-Language Selector Dropdown -->
+        <div class="lang-select-wrapper">
+          <select id="langSelect" class="lang-select" aria-label="Select Language">
+            <option value="en">🌐 EN</option>
+            <option value="es">🌐 ES</option>
+            <option value="fr">🌐 FR</option>
+          </select>
+          <i class="fa-solid fa-chevron-down lang-icon"></i>
+        </div>
+
+        <a href="#presupuestador" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.88rem;">
+          <i class="fa-solid fa-calculator"></i> <span data-i18n="nav_cta">Get a Quote</span>
+        </a>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero_badge">Premium Residential Remodeling</span>
+        </div>
+        
+        <h1 class="hero-title" data-i18n="hero_title">
+          Redefining elegance and comfort for your <span class="gradient-emerald">home</span>.
+        </h1>
+        
+        <p class="hero-description" data-i18n="hero_desc">
+          We transform living spaces into architectural masterpieces. Custom design, top-tier materials, and flawless certified execution.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#presupuestador" class="btn btn-primary">
+            <i class="fa-solid fa-sliders"></i> <span data-i18n="hero_btn_calc">Calculate Budget</span>
+          </a>
+          <a href="#transformacion" class="btn btn-secondary">
+            <i class="fa-solid fa-eye"></i> <span data-i18n="hero_btn_view">View Transformations</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+180</span>
+            <span class="stat-label" data-i18n="stat_projects">Projects Delivered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label" data-i18n="stat_warranty">Certified Warranty</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label" data-i18n="stat_rating">Client Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-wrapper">
+          <div class="hero-img-box">
+            <img src="img/hero.jpg" alt="Luxury Kitchen Remodeling by Rohi Remodeling" class="hero-img">
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="badge-text">
+              <strong data-i18n="badge_luxury_title">Luxury Finishes</strong>
+              <span data-i18n="badge_luxury_sub">Marble, Quartz & LED Lighting</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-2">
+            <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="badge-text">
+              <strong data-i18n="badge_warranty_title">5-Year Rohi Warranty</strong>
+              <span data-i18n="badge_warranty_sub">Structure & Installations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BEFORE & AFTER INTERACTIVE SLIDER
+       ========================================================================== -->
+  <section class="before-after-section" id="transformacion">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="ba_badge">Before & After Showcase</div>
+        <h2 class="section-title" data-i18n="ba_title">Slide to Discover the <span class="gradient-emerald">Transformation</span></h2>
+        <p class="section-desc" data-i18n="ba_desc">Drag the center controller to view the striking difference between an outdated space and our luxury renovation.</p>
+      </div>
+
+      <div class="ba-slider-container">
+        <div class="ba-wrapper">
+          <span class="ba-tag tag-before" data-i18n="ba_tag_before">Original Space</span>
+          <span class="ba-tag tag-after" data-i18n="ba_tag_after">Rohi Renovation</span>
+          
+          <img src="img/kitchen_after.jpg" alt="Kitchen After Remodel" class="ba-img-after">
+          
+          <div class="ba-img-before-wrapper" id="baBeforeWrapper">
+            <img src="img/kitchen_before.jpg" alt="Kitchen Before Remodel" class="ba-img-before">
+          </div>
+
+          <div class="ba-handle" id="baHandle">
+            <div class="ba-handle-button">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+          </div>
+
+          <input type="range" min="0" max="100" value="50" class="ba-slider-range" id="baRange" aria-label="Before and After Range Slider">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE REMODELING COST ESTIMATOR
+       ========================================================================== -->
+  <section class="calculator-section" id="presupuestador">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="calc_badge">Total Transparency</div>
+        <h2 class="section-title" data-i18n="calc_title">Interactive Budget <span class="gradient-emerald">Estimator</span></h2>
+        <p class="section-desc" data-i18n="calc_desc">Select your project specifications and receive an instant estimate with zero commitment.</p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-inputs">
+          <!-- Step 1: Space Type -->
+          <div>
+            <div class="calc-group-title"><i class="fa-solid fa-house-laptop"></i> <span data-i18n="calc_step1">1. Select Space to Remodel</span></div>
+            <div class="option-grid" id="spaceOptions">
+              <button class="calc-btn-option selected" data-val="cocina" data-i18n-key="calc_space_kitchen">
+                <strong data-i18n="calc_space_kitchen">Full Kitchen</strong>
+                <span data-i18n="calc_space_kitchen_sub">Islands, cabinets & countertops</span>
+              </button>
+              <button class="calc-btn-option" data-val="bano" data-i18n-key="calc_space_bath">
+                <strong data-i18n="calc_space_bath">Luxury Bathroom</strong>
+                <span data-i18n="calc_space_bath_sub">Showers, fixtures & tiles</span>
+              </button>
+              <button class="calc-btn-option" data-val="total" data-i18n-key="calc_space_home">
+                <strong data-i18n="calc_space_home">Whole Home</strong>
+                <span data-i18n="calc_space_home_sub">Open concept & complete layout</span>
+              </button>
+              <button class="calc-btn-option" data-val="exterior" data-i18n-key="calc_space_exterior">
+                <strong data-i18n="calc_space_exterior">Outdoor Patio</strong>
+                <span data-i18n="calc_space_exterior_sub">Decks, pergolas & lighting</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Quality Tier -->
+          <div>
+            <div class="calc-group-title"><i class="fa-solid fa-gem"></i> <span data-i18n="calc_step2">2. Finishes & Material Quality</span></div>
+            <div class="option-grid" id="finishOptions">
+              <button class="calc-btn-option" data-val="standard" data-i18n-key="calc_finish_std">
+                <strong data-i18n="calc_finish_std">Modern Standard</strong>
+                <span data-i18n="calc_finish_std_sub">Durable & clean finishes</span>
+              </button>
+              <button class="calc-btn-option selected" data-val="premium" data-i18n-key="calc_finish_prem">
+                <strong data-i18n="calc_finish_prem">Rohi Premium</strong>
+                <span data-i18n="calc_finish_prem_sub">Quartz, soft-close hardware</span>
+              </button>
+              <button class="calc-btn-option" data-val="luxury" data-i18n-key="calc_finish_lux">
+                <strong data-i18n="calc_finish_lux">Custom Luxury</strong>
+                <span data-i18n="calc_finish_lux_sub">Imported marble, smart automation</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Area Slider -->
+          <div class="range-container">
+            <div class="range-header">
+              <span class="calc-group-title" style="margin:0;"><i class="fa-solid fa-ruler-combined"></i> <span data-i18n="calc_step3">3. Estimated Area</span></span>
+              <span class="range-val" id="areaValDisplay">400 sq ft</span>
+            </div>
+            <input type="range" min="150" max="2500" step="25" value="400" class="custom-range" id="areaRange">
+          </div>
+        </div>
+
+        <!-- Output Box -->
+        <div class="calc-output-box">
+          <div class="calc-output-header">
+            <span style="font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted);" data-i18n="calc_est_header">Estimated Budget</span>
+            <div class="calc-price-display" id="calcDisplayPrice">$12,600 - $16,100 USD</div>
+            <p style="font-size:0.82rem; color:var(--text-muted);" data-i18n="calc_est_sub">Includes labor, clean demolition, materials, and project management.</p>
+          </div>
+
+          <div class="calc-details-list">
+            <div class="calc-detail-row">
+              <span data-i18n="calc_row_space">Space:</span>
+              <span id="calcSpaceName">Full Kitchen</span>
+            </div>
+            <div class="calc-detail-row">
+              <span data-i18n="calc_row_finish">Finish Tier:</span>
+              <span id="calcFinishName">Rohi Premium</span>
+            </div>
+            <div class="calc-detail-row">
+              <span data-i18n="calc_row_time">Estimated Time:</span>
+              <span id="calcTime">4 - 6 Weeks</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="sendEstimateBtn" style="width: 100%; margin-top: 20px;">
+            <i class="fa-solid fa-paper-plane"></i> <span data-i18n="calc_btn_send">Schedule Technical Visit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="serv_badge">Our Specialization</div>
+        <h2 class="section-title" data-i18n="serv_title">High-End Renovation <span class="gradient-emerald">Services</span></h2>
+        <p class="section-desc" data-i18n="serv_desc">We design and execute every detail to ensure functional, cutting-edge, and lasting spaces.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="service-title" data-i18n="serv1_title">Open-Concept Kitchens</h3>
+          <p class="service-desc" data-i18n="serv1_desc">Full kitchen transformations featuring quartz or marble waterfall islands, custom cabinetry, and architectural lighting.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv1_item1">High-durability granite and quartz countertops</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv1_item2">Cabinets with Blum® soft-close hardware</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv1_item3">Built-in premium appliance installation</span></div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-shower"></i>
+          </div>
+          <h3 class="service-title" data-i18n="serv2_title">Spa Bathrooms & Restyle</h3>
+          <p class="service-desc" data-i18n="serv2_desc">Master and guest bathroom renovations. Curbless rain showers, large-format porcelain tiles, and custom vanities.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv2_item1">Continuous anti-slip shower trays</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv2_item2">LED backlit anti-fog vanity mirrors</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv2_item3">Matte black & brushed gold fixtures</span></div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h3 class="service-title" data-i18n="serv3_title">Interior Remodeling & Layout</h3>
+          <p class="service-desc" data-i18n="serv3_desc">Strategic wall removal, cove LED ceilings, walnut wood or technical porcelain flooring.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv3_item1">Layout redesign & drywall partition</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv3_item2">Decorative moldings & wood slatted walls</span></div>
+            <div class="service-list-item"><i class="fa-solid fa-check"></i> <span data-i18n="serv3_item3">Acoustic and thermal insulation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO GALLERY
+       ========================================================================== -->
+  <section class="portfolio-section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="port_badge">Excellence Portfolio</div>
+        <h2 class="section-title" data-i18n="port_title">Explore Our Recent <span class="gradient-emerald">Projects</span></h2>
+        <p class="section-desc" data-i18n="port_desc">Every residence is a testament to our commitment to craftsmanship and detail.</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+        <button class="filter-btn" data-filter="cocinas" data-i18n="filter_kitchens">Kitchens</button>
+        <button class="filter-btn" data-filter="banos" data-i18n="filter_baths">Bathrooms</button>
+        <button class="filter-btn" data-filter="interiores" data-i18n="filter_interiors">Interiors</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-category="cocinas">
+          <div class="portfolio-img-box">
+            <img src="img/hero.jpg" alt="Emerald Oak Kitchen Project">
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category" data-i18n="port1_tag">Luxury Kitchen</span>
+            <h3 class="portfolio-title" data-i18n="port1_title">Emerald Oak Residence</h3>
+            <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> San Isidro</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="banos">
+          <div class="portfolio-img-box">
+            <img src="img/bathroom.jpg" alt="Spa Bathroom Project">
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category" data-i18n="port2_tag">Master Spa Bath</span>
+            <h3 class="portfolio-title" data-i18n="port2_title">Herringbone Bath Suite</h3>
+            <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Miraflores</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="cocinas">
+          <div class="portfolio-img-box">
+            <img src="img/kitchen_after.jpg" alt="Open Concept Kitchen Project">
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category" data-i18n="port3_tag">Minimalist Kitchen</span>
+            <h3 class="portfolio-title" data-i18n="port3_title">Calacatta Modern Kitchen</h3>
+            <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> La Molina</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROCESS SECTION (THE ROHI METHOD)
+       ========================================================================== -->
+  <section class="process-section" id="metodo">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="proc_badge">Guaranteed Methodology</div>
+        <h2 class="section-title" data-i18n="proc_title">The <span class="gradient-emerald">Rohi Remodeling</span> Process</h2>
+        <p class="section-desc" data-i18n="proc_desc">We guarantee clean execution, zero unexpected costs, and strict timeline adherence.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-num">01</span>
+          <h3 class="process-title" data-i18n="proc1_title">Site Visit & 3D Concept</h3>
+          <p class="process-desc" data-i18n="proc1_desc">We perform precise site measurements, understand your vision, and draft the architectural concept.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-num">02</span>
+          <h3 class="process-title" data-i18n="proc2_title">Fixed Cost Proposal</h3>
+          <p class="process-desc" data-i18n="proc2_desc">We present a transparent line-item budget. No hidden fees or surprise costs during construction.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-num">03</span>
+          <h3 class="process-title" data-i18n="proc3_title">Clean Execution</h3>
+          <p class="process-desc" data-i18n="proc3_desc">Our skilled craftsmen work under strict technical supervision, keeping work areas protected and clean.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-num">04</span>
+          <h3 class="process-title" data-i18n="proc4_title">Handover & Warranty</h3>
+          <p class="process-desc" data-i18n="proc4_desc">Final walkthrough inspection together and formal delivery with our 5-Year Warranty certificate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge" data-i18n="test_badge">Real Client Feedback</div>
+        <h2 class="section-title" data-i18n="test_title">What Our Clients <span class="gradient-emerald">Say</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote" data-i18n="test1_quote">"Rohi Remodeling completely transformed our 1990s kitchen. The green cabinetry craftsmanship and marble island exceeded all our expectations. They delivered right on schedule."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CM</div>
+            <div class="author-info">
+              <strong data-i18n="test1_name">Carlos & Maria M.</strong>
+              <span data-i18n="test1_sub">Full Kitchen Remodel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote" data-i18n="test2_quote">"The level of cleanliness during construction was outstanding. The team protected the rest of our home and our new master bathroom spa shower is incredible. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VR</div>
+            <div class="author-info">
+              <strong data-i18n="test2_name">Valeria R.</strong>
+              <span data-i18n="test2_sub">Master Bath Renovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="badge" data-i18n="contact_badge">Direct Consultation</div>
+          <h2 class="section-title" style="text-align:left;" data-i18n="contact_title">Let's Talk About Your Next <span class="gradient-emerald">Project</span></h2>
+          <p style="color:var(--text-muted);" data-i18n="contact_desc">Schedule a technical visit with our remodeling specialists. We reply in under 24 hours.</p>
+
+          <div style="display:flex; flex-direction:column; gap:20px; margin-top:20px;">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <h4 data-i18n="contact_phone_title">Phone / WhatsApp</h4>
+                <p>+1 (555) 384-9201</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4 data-i18n="contact_email_title">Email Address</h4>
+                <p>contact@rohiremodeling.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-details">
+                <h4 data-i18n="contact_hours_title">Working Hours</h4>
+                <p data-i18n="contact_hours_val">Mon - Sat: 8:00 AM - 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" data-i18n="form_name_label">Full Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Robert Gomez" data-i18n-ph="form_name_ph" required>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div class="form-group">
+                <label for="contactPhone" data-i18n="form_phone_label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="+1 (555) 000-0000" data-i18n-ph="form_phone_ph" required>
+              </div>
+              <div class="form-group">
+                <label for="contactSpace" data-i18n="form_space_label">Project Type</label>
+                <select id="contactSpace" class="form-select">
+                  <option value="cocina" data-i18n="calc_space_kitchen">Full Kitchen</option>
+                  <option value="bano" data-i18n="calc_space_bath">Luxury Bathroom</option>
+                  <option value="total" data-i18n="calc_space_home">Whole Home</option>
+                  <option value="exterior" data-i18n="calc_space_exterior">Outdoor Patio</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" data-i18n="form_msg_label">Project Details / Message</label>
+              <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Describe what you would like to remodel..." data-i18n-ph="form_msg_ph"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <i class="fa-solid fa-paper-plane"></i> <span data-i18n="form_btn_submit">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <div class="logo-img-box">
+              <img src="./isotipo-sin fondo.png" alt="Rohi Remodeling" class="logo-img">
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">ROHI</span>
+              <span class="brand-sub">REMODELING</span>
+            </div>
+          </div>
+          <p data-i18n="footer_desc">Specialists in interior architecture, high-value home remodeling, and custom design.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_nav">Navigation</h4>
+          <div class="footer-links">
+            <a href="#inicio" data-i18n="nav_home">Home</a>
+            <a href="#servicios" data-i18n="nav_services">Services</a>
+            <a href="#transformacion" data-i18n="nav_transform">Before & After</a>
+            <a href="#presupuestador" data-i18n="nav_estimator">Estimator</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_serv">Services</h4>
+          <div class="footer-links">
+            <a href="#servicios" data-i18n="calc_space_kitchen">Full Kitchens</a>
+            <a href="#servicios" data-i18n="calc_space_bath">Luxury Bathrooms</a>
+            <a href="#servicios" data-i18n="calc_space_home">Whole Home Remodel</a>
+            <a href="#servicios" data-i18n="calc_space_exterior">Outdoor Patios</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_contact">Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+15553849201"><i class="fa-solid fa-phone"></i> +1 (555) 384-9201</a>
+            <a href="mailto:contact@rohiremodeling.com"><i class="fa-solid fa-envelope"></i> contact@rohiremodeling.com</a>
+            <span style="color:var(--text-muted); font-size:0.88rem;"><i class="fa-solid fa-shield"></i> <span data-i18n="badge_warranty_title">5-Year Rohi Warranty</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">&copy; 2026 Rohi Remodeling. All rights reserved.</span>
+        <span data-i18n="footer_sub">Designed for Residential Excellence</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toastMsg">
+    <i class="fa-solid fa-circle-check" style="color:var(--emerald-bright); font-size:1.4rem;"></i>
+    <div>
+      <strong data-i18n="toast_title">Message Sent Successfully!</strong>
+      <p style="font-size:0.8rem; color:var(--text-muted);" data-i18n="toast_sub">A Rohi remodeling consultant will contact you shortly.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
