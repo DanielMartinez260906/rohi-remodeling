@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ROHI REMODELING - Interactive Features & Multi-Language i18n JavaScript
+   ROHI REMODELING - Comprehensive Exterior & Interior i18n JavaScript
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,438 +19,468 @@ const translations = {
     // Nav
     nav_home: "Home",
     nav_services: "Services",
+    nav_exteriors: "Exteriors & Porches",
     nav_transform: "Before & After",
     nav_estimator: "Estimator",
     nav_projects: "Projects",
     nav_process: "Process",
     nav_contact: "Contact",
-    nav_cta: "Get a Quote",
+    nav_cta: "Free Estimate",
 
     // Hero
-    hero_badge: "Premium Residential Remodeling",
-    hero_title: "Redefining elegance and comfort for your <span class=\"gradient-emerald\">home</span>.",
-    hero_desc: "We transform living spaces into architectural masterpieces. Custom design, top-tier materials, and flawless certified execution.",
-    hero_btn_calc: "Calculate Budget",
-    hero_btn_view: "View Transformations",
-    stat_projects: "Projects Delivered",
-    stat_warranty: "Certified Warranty",
-    stat_rating: "Client Rating",
-    badge_luxury_title: "Luxury Finishes",
-    badge_luxury_sub: "Marble, Quartz & LED Lighting",
-    badge_warranty_title: "5-Year Rohi Warranty",
-    badge_warranty_sub: "Structure & Installations",
+    hero_badge: "Licensed & Insured • US Exterior & Interior Specialists",
+    hero_title: "Custom Porches, Roofing, Concrete & Interior <span class=\"gradient-emerald\">Remodeling</span>.",
+    hero_desc: "Enhance your home's curb appeal and indoor comfort. We build custom timber porches, architectural roofs, stamped concrete extensions, and luxury interior spaces.",
+    hero_btn_calc: "Instant Cost Estimator",
+    hero_btn_view: "Explore Transformations",
+    stat_projects: "US Homes Transformed",
+    stat_warranty: "Structural Warranty",
+    stat_rating: "5-Star Customer Rating",
+    badge_luxury_title: "Custom Timber & Stone",
+    badge_luxury_sub: "Porches, Decks & Patios",
+    badge_warranty_title: "10-Year Structural Warranty",
+    badge_warranty_sub: "Fully Bonded & Insured",
+
+    // Services
+    serv_badge: "Complete Home Services",
+    serv_title: "Premier Exterior & Interior <span class=\"gradient-emerald\">Solutions</span>",
+    serv_desc: "From custom timber-framed porches and roofing to stamped concrete driveways and kitchen remodels.",
+    
+    serv_porch_title: "Custom Covered Porches & Sunrooms",
+    serv_porch_desc: "Expand your outdoor living space with timber-framed front porches, screened sunrooms, outdoor fireplaces, and cedar pergolas.",
+    serv_porch_i1: "Gable & hip roof extensions with timber posts",
+    serv_porch_i2: "Integrated outdoor fireplaces & recessed lighting",
+    serv_porch_i3: "Screened-in porches with Eze-Breeze® windows",
+
+    serv_roof_title: "Architectural Roofing & Shingles",
+    serv_roof_desc: "Complete roof replacements engineered for storm resistance using GAF & CertainTeed 50-year architectural shingles and seamless gutters.",
+    serv_roof_i1: "GAF Timberline HDZ® 50-year architectural shingles",
+    serv_roof_i2: "Seamless aluminum gutters & leaf guards",
+    serv_roof_i3: "Standing seam metal accent roofing",
+
+    serv_concrete_title: "Concrete Extensions & Stamped Patios",
+    serv_concrete_desc: "Durable concrete driveway expansions, decorative stamped concrete patios, walkways, retaining walls, and custom fire pit areas.",
+    serv_concrete_i1: "Stamped & colored decorative patio finishes",
+    serv_concrete_i2: "Reinforced driveway extensions & RV pads",
+    serv_concrete_i3: "Built-in masonry fire pits & stone seating",
+
+    serv_interior_title: "Luxury Interior Remodeling",
+    serv_interior_desc: "Open-concept kitchen overhauls, master bathroom spa suites, basement finishing, and custom fireplace accent walls.",
+    serv_interior_i1: "Quartz waterfall kitchen islands & custom cabinets",
+    serv_interior_i2: "Walk-in curbless tile showers & vanities",
+    serv_interior_i3: "Finished basements & open layout framing",
 
     // Before & After
     ba_badge: "Before & After Showcase",
     ba_title: "Slide to Discover the <span class=\"gradient-emerald\">Transformation</span>",
-    ba_desc: "Drag the center controller to view the striking difference between an outdated space and our luxury renovation.",
-    ba_tag_before: "Original Space",
+    ba_desc: "Drag the center controller to view the striking difference between an outdated home and our custom remodeling.",
+    ba_tag_before: "Original Home",
     ba_tag_after: "Rohi Renovation",
 
     // Calculator
-    calc_badge: "Total Transparency",
-    calc_title: "Interactive Budget <span class=\"gradient-emerald\">Estimator</span>",
-    calc_desc: "Select your project specifications and receive an instant estimate with zero commitment.",
-    calc_step1: "1. Select Space to Remodel",
-    calc_space_kitchen: "Full Kitchen",
-    calc_space_kitchen_sub: "Islands, cabinets & countertops",
-    calc_space_bath: "Luxury Bathroom",
-    calc_space_bath_sub: "Showers, fixtures & tiles",
-    calc_space_home: "Whole Home",
-    calc_space_home_sub: "Open concept & complete layout",
-    calc_space_exterior: "Outdoor Patio",
-    calc_space_exterior_sub: "Decks, pergolas & lighting",
-    calc_step2: "2. Finishes & Material Quality",
-    calc_finish_std: "Modern Standard",
-    calc_finish_std_sub: "Durable & clean finishes",
+    calc_badge: "Transparent US Pricing",
+    calc_title: "Interactive Remodeling <span class=\"gradient-emerald\">Estimator</span>",
+    calc_desc: "Select your project type, material tier, and square footage to get an instant estimate range.",
+    calc_step1: "1. Select Project Scope",
+    calc_space_porch: "Covered Porch / Deck",
+    calc_space_porch_sub: "Timber frames, gables & stone",
+    calc_space_roof: "Architectural Roof",
+    calc_space_roof_sub: "50-yr shingles & seamless gutters",
+    calc_space_concrete: "Concrete Extension",
+    calc_space_concrete_sub: "Stamped patio & driveway pads",
+    calc_space_interior: "Kitchen & Bath",
+    calc_space_interior_sub: "Quartz islands & spa showers",
+    calc_step2: "2. Finish & Material Quality",
+    calc_finish_std: "Standard Craftsman",
+    calc_finish_std_sub: "Durable regional materials",
     calc_finish_prem: "Rohi Premium",
-    calc_finish_prem_sub: "Quartz, soft-close hardware",
-    calc_finish_lux: "Custom Luxury",
-    calc_finish_lux_sub: "Imported marble, smart automation",
-    calc_step3: "3. Estimated Area",
-    calc_est_header: "Estimated Budget",
-    calc_est_sub: "Includes labor, clean demolition, materials, and project management.",
-    calc_row_space: "Space:",
-    calc_row_finish: "Finish Tier:",
-    calc_row_time: "Estimated Time:",
-    calc_btn_send: "Schedule Technical Visit",
-
-    // Services
-    serv_badge: "Our Specialization",
-    serv_title: "High-End Renovation <span class=\"gradient-emerald\">Services</span>",
-    serv_desc: "We design and execute every detail to ensure functional, cutting-edge, and lasting spaces.",
-    serv1_title: "Open-Concept Kitchens",
-    serv1_desc: "Full kitchen transformations featuring quartz or marble waterfall islands, custom cabinetry, and architectural lighting.",
-    serv1_item1: "High-durability granite and quartz countertops",
-    serv1_item2: "Cabinets with Blum® soft-close hardware",
-    serv1_item3: "Built-in premium appliance installation",
-    serv2_title: "Spa Bathrooms & Restyle",
-    serv2_desc: "Master and guest bathroom renovations. Curbless rain showers, large-format porcelain tiles, and custom vanities.",
-    serv2_item1: "Continuous anti-slip shower trays",
-    serv2_item2: "LED backlit anti-fog vanity mirrors",
-    serv2_item3: "Matte black & brushed gold fixtures",
-    serv3_title: "Interior Remodeling & Layout",
-    serv3_desc: "Strategic wall removal, cove LED ceilings, walnut wood or technical porcelain flooring.",
-    serv3_item1: "Layout redesign & drywall partition",
-    serv3_item2: "Decorative moldings & wood slatted walls",
-    serv3_item3: "Acoustic and thermal insulation",
+    calc_finish_prem_sub: "Cedar beams, GAF HDZ, stamped concrete",
+    calc_finish_lux: "Luxury Estate",
+    calc_finish_lux_sub: "Natural stone, metal roofs, smart outdoor living",
+    calc_step3: "3. Project Area Size",
+    calc_est_header: "Estimated Budget Range",
+    calc_est_sub: "Includes labor, permits, cleanup, materials, and structural warranty.",
+    calc_row_space: "Scope:",
+    calc_row_finish: "Tier:",
+    calc_row_time: "Est. Duration:",
+    calc_btn_send: "Request Free On-Site Estimate",
 
     // Portfolio
-    port_badge: "Excellence Portfolio",
-    port_title: "Explore Our Recent <span class=\"gradient-emerald\">Projects</span>",
-    port_desc: "Every residence is a testament to our commitment to craftsmanship and detail.",
-    filter_all: "All",
-    filter_kitchens: "Kitchens",
-    filter_baths: "Bathrooms",
+    port_badge: "Our Work",
+    port_title: "Recent Featured <span class=\"gradient-emerald\">Projects</span>",
+    port_desc: "Explore our exterior porches, roofing replacements, concrete patios, and interior remodels.",
+    filter_all: "All Projects",
+    filter_porches: "Porches & Decks",
+    filter_roofing: "Roofing",
     filter_interiors: "Interiors",
-    port1_tag: "Luxury Kitchen",
-    port1_title: "Emerald Oak Residence",
-    port2_tag: "Master Spa Bath",
-    port2_title: "Herringbone Bath Suite",
-    port3_tag: "Minimalist Kitchen",
-    port3_title: "Calacatta Modern Kitchen",
+    port1_tag: "Covered Porch",
+    port1_title: "Timber Gable Porch & Stone Fireplace",
+    port2_tag: "Architectural Roofing",
+    port2_title: "Full Shingle Roof & Stone Facade",
+    port3_tag: "Kitchen & Interior",
+    port3_title: "Emerald & Quartz Open Kitchen",
 
     // Process
-    proc_badge: "Guaranteed Methodology",
-    proc_title: "The <span class=\"gradient-emerald\">Rohi Remodeling</span> Process",
-    proc_desc: "We guarantee clean execution, zero unexpected costs, and strict timeline adherence.",
-    proc1_title: "Site Visit & 3D Concept",
-    proc1_desc: "We perform precise site measurements, understand your vision, and draft the architectural concept.",
-    proc2_title: "Fixed Cost Proposal",
-    proc2_desc: "We present a transparent line-item budget. No hidden fees or surprise costs during construction.",
-    proc3_title: "Clean Execution",
-    proc3_desc: "Our skilled craftsmen work under strict technical supervision, keeping work areas protected and clean.",
-    proc4_title: "Handover & Warranty",
-    proc4_desc: "Final walkthrough inspection together and formal delivery with our 5-Year Warranty certificate.",
+    proc_badge: "The Rohi Method",
+    proc_title: "How We Build Your <span class=\"gradient-emerald\">Dream Home</span>",
+    proc_desc: "Clear communication, HOA permitting assistance, clean worksites, and guaranteed delivery timelines.",
+    proc1_title: "1. Free On-Site Consultation",
+    proc1_desc: "We visit your property, measure dimensions, review HOA guidelines, and sketch 3D design concepts.",
+    proc2_title: "2. Transparent Itemized Quote",
+    proc2_desc: "You receive a fixed proposal listing material specs, permits, and exact labor costs with zero surprises.",
+    proc3_title: "3. Professional Construction",
+    proc3_desc: "Our licensed team frames, installs, and constructs your project while keeping your lawn clean.",
+    proc4_title: "4. Final Inspection & Warranty",
+    proc4_desc: "Walkthrough with the homeowner and delivery of our 10-Year Structural Warranty certificate.",
 
     // Testimonials
-    test_badge: "Real Client Feedback",
-    test_title: "What Our Clients <span class=\"gradient-emerald\">Say</span>",
-    test1_quote: "\"Rohi Remodeling completely transformed our 1990s kitchen. The green cabinetry craftsmanship and marble island exceeded all our expectations. They delivered right on schedule.\"",
-    test1_name: "Carlos & Maria M.",
-    test1_sub: "Full Kitchen Remodel",
-    test2_quote: "\"The level of cleanliness during construction was outstanding. The team protected the rest of our home and our new master bathroom spa shower is incredible. Highly recommended!\"",
-    test2_name: "Valeria R.",
-    test2_sub: "Master Bath Renovation",
+    test_badge: "Verified Reviews",
+    test_title: "Trusted by Homeowners <span class=\"gradient-emerald\">Nationwide</span>",
+    test1_quote: "\"Rohi Remodeling built our timber gable covered porch with a stone fireplace. It completely elevated our backyard and curb appeal! Professional crew and finished on time.\"",
+    test1_name: "James & Sarah K.",
+    test1_sub: "Covered Porch & Patio Extension",
+    test2_quote: "\"Replaced our roof with GAF architectural shingles and remodeled our main kitchen. Their craftsmanship and cleanup were top-notch.\"",
+    test2_name: "Michael D.",
+    test2_sub: "Roofing & Kitchen Renovation",
 
     // Contact
-    contact_badge: "Direct Consultation",
-    contact_title: "Let's Talk About Your Next <span class=\"gradient-emerald\">Project</span>",
-    contact_desc: "Schedule a technical visit with our remodeling specialists. We reply in under 24 hours.",
-    contact_phone_title: "Phone / WhatsApp",
-    contact_email_title: "Email Address",
-    contact_hours_title: "Working Hours",
-    contact_hours_val: "Mon - Sat: 8:00 AM - 7:00 PM",
+    contact_badge: "Get In Touch",
+    contact_title: "Schedule Your Free On-Site <span class=\"gradient-emerald\">Estimate</span>",
+    contact_desc: "Fill out the form below or call us directly. Licensed, bonded, and insured.",
+    contact_phone_title: "Call / Text Us",
+    contact_email_title: "Email Inquiry",
+    contact_hours_title: "Office Hours",
+    contact_hours_val: "Mon - Sat: 7:00 AM - 6:00 PM EST",
     form_name_label: "Full Name",
-    form_name_ph: "e.g. Robert Gomez",
+    form_name_ph: "e.g. John Miller",
     form_phone_label: "Phone Number",
-    form_phone_ph: "+1 (555) 000-0000",
-    form_space_label: "Project Type",
-    form_msg_label: "Project Details / Message",
-    form_msg_ph: "Describe what you would like to remodel...",
-    form_btn_submit: "Send Message",
+    form_phone_ph: "(555) 234-5678",
+    form_space_label: "Primary Project Type",
+    form_msg_label: "Project Details / Address",
+    form_msg_ph: "Tell us about your porch, roof, concrete, or interior project...",
+    form_btn_submit: "Submit Request for Free Estimate",
 
     // Footer
-    footer_desc: "Specialists in interior architecture, high-value home remodeling, and custom design.",
+    footer_desc: "Licensed & insured general contractor specializing in custom porches, architectural roofing, concrete extensions, and luxury interiors.",
     footer_nav: "Navigation",
-    footer_serv: "Services",
-    footer_contact: "Contact",
-    footer_rights: "&copy; 2026 Rohi Remodeling. All rights reserved.",
-    footer_sub: "Designed for Residential Excellence",
-    toast_title: "Message Sent Successfully!",
-    toast_sub: "A Rohi remodeling consultant will contact you shortly."
+    footer_serv: "Specialties",
+    footer_contact: "Contact Info",
+    footer_rights: "&copy; 2026 Rohi Remodeling. Licensed, Bonded & Insured.",
+    footer_sub: "American Quality Construction Standards",
+    toast_title: "Estimate Request Received!",
+    toast_sub: "Our remodeling specialist will call you within 24 hours."
   },
 
   es: {
     // Nav
     nav_home: "Inicio",
     nav_services: "Servicios",
+    nav_exteriors: "Porches y Exteriores",
     nav_transform: "Antes y Después",
     nav_estimator: "Presupuestador",
     nav_projects: "Proyectos",
     nav_process: "Proceso",
     nav_contact: "Contacto",
-    nav_cta: "Cotizar Proyecto",
+    nav_cta: "Cotización Gratis",
 
     // Hero
-    hero_badge: "Remodelación Residencial Prémium",
-    hero_title: "Redefinimos la elegancia y confort de tu <span class=\"gradient-emerald\">hogar</span>.",
-    hero_desc: "Convertimos espacios habitables en obras de arte arquitectónicas. Diseño personalizado, materiales de primera selección y garantía certificada.",
-    hero_btn_calc: "Calcular Presupuesto",
-    hero_btn_view: "Ver Transformaciones",
-    stat_projects: "Proyectos Entregados",
-    stat_warranty: "Garantía Certificada",
-    stat_rating: "Valoración Clientes",
-    badge_luxury_title: "Acabados de Lujo",
-    badge_luxury_sub: "Mármol, Cuarzo & Iluminación LED",
-    badge_warranty_title: "Garantía Rohi 5 Años",
-    badge_warranty_sub: "Estructura e Instalaciones",
+    hero_badge: "Licenciados y Asegurados • Especialistas en Exteriores e Interiores",
+    hero_title: "Porches a Medida, Techos, Concreto y <span class=\"gradient-emerald\">Remodelación</span>.",
+    hero_desc: "Aumenta la elegancia exterior e interior de tu propiedad. Construimos porches de madera a medida, techos arquitectónicos, extensiones de concreto y espacios interiores de lujo.",
+    hero_btn_calc: "Estimador de Costos",
+    hero_btn_view: "Explorar Trabajos",
+    stat_projects: "Casas Transformadas",
+    stat_warranty: "Garantía Estructural",
+    stat_rating: "Valoración 5 Estrellas",
+    badge_luxury_title: "Madera & Piedra Natural",
+    badge_luxury_sub: "Porches, Decks y Patios",
+    badge_warranty_title: "10 Años de Garantía",
+    badge_warranty_sub: "Licenciados y Asegurados",
+
+    // Services
+    serv_badge: "Servicios Integrales",
+    serv_title: "Soluciones de Renombre en <span class=\"gradient-emerald\">Exteriores e Interiores</span>",
+    serv_desc: "Desde porches cubiertos y techados hasta patios de concreto estampado y remodelación de cocinas.",
+    
+    serv_porch_title: "Porches Cubiertos y Terrazas a Medida",
+    serv_porch_desc: "Amplía tu espacio exterior con porches frontales en madera de cedro, chimeneas de piedra, pérgolas y cerramientos.",
+    serv_porch_i1: "Estructuras en madera con vigas vista y postes",
+    serv_porch_i2: "Chimeneas integradas e iluminación empotrada",
+    serv_porch_i3: "Porches cerrados con mosquiteros y ventanas",
+
+    serv_roof_title: "Techos Arquitectónicos y Coberturas",
+    serv_roof_desc: "Reemplazo de techos resistentes a tormentas con tejas arquitectónicas GAF & CertainTeed garantizadas a 50 años.",
+    serv_roof_i1: "Tejas arquitectónicas GAF Timberline HDZ®",
+    serv_roof_i2: "Canales de aluminio continuo y rejillas anti-hojas",
+    serv_roof_i3: "Detalles en techado metálico con costura alzada",
+
+    serv_concrete_title: "Extensiones de Concreto y Patios Estampados",
+    serv_concrete_desc: "Ampliación de entradas de vehículos (driveways), patios de concreto estampado decorativo, caminos y pozos de fuego.",
+    serv_concrete_i1: "Acabados estampados y coloreados decorativos",
+    serv_concrete_i2: "Ampliación de losas de concreto reforzado",
+    serv_concrete_i3: "Pozos de fuego de mampostería y bancos de piedra",
+
+    serv_interior_title: "Remodelación de Interiores de Lujo",
+    serv_interior_desc: "Renovación integral de cocinas con concepto abierto, baños estilo spa, sótanos acabados y chimeneas decorativas.",
+    serv_interior_i1: "Islas de cuarzo en cascada y gabinetes custom",
+    serv_interior_i2: "Duchas continuas sin escalón en porcelanato",
+    serv_interior_i3: "Acabado de sótanos y redistribución de espacios",
 
     // Before & After
     ba_badge: "Efecto Antes y Después",
-    ba_title: "Desliza para descubrir la <span class=\"gradient-emerald\">Transformación</span>",
-    ba_desc: "Arrastra el controlador central para visualizar la diferencia entre un espacio anticuado y nuestra renovación de lujo.",
-    ba_tag_before: "Espacio Original",
+    ba_title: "Desliza para ver la <span class=\"gradient-emerald\">Transformación</span>",
+    ba_desc: "Mueve el controlador para comparar una propiedad original frente a nuestra renovación a medida.",
+    ba_tag_before: "Casa Original",
     ba_tag_after: "Remodelación Rohi",
 
     // Calculator
-    calc_badge: "Transparencia Total",
-    calc_title: "Estimador de Presupuesto <span class=\"gradient-emerald\">Interactivo</span>",
-    calc_desc: "Selecciona las características de tu proyecto y obtén una estimación precisa en segundos.",
-    calc_step1: "1. Selecciona el Espacio a Remodelar",
-    calc_space_kitchen: "Cocina Integral",
-    calc_space_kitchen_sub: "Islas, muebles & encimeras",
-    calc_space_bath: "Baño de Lujo",
-    calc_space_bath_sub: "Duchas, grifería & azulejos",
-    calc_space_home: "Remodelación Total",
-    calc_space_home_sub: "Hogar completo & concepto abierto",
-    calc_space_exterior: "Terraza / Exterior",
-    calc_space_exterior_sub: "Decks, pergolados & iluminación",
-    calc_step2: "2. Nivel de Acabados & Materiales",
-    calc_finish_std: "Estándar Moderno",
-    calc_finish_std_sub: "Acabados duraderos y limpios",
-    calc_finish_prem: "Estándar Prémium",
-    calc_finish_prem_sub: "Cuarzo, herrajes de cierre suave",
-    calc_finish_lux: "Luxury Custom",
-    calc_finish_lux_sub: "Mármol importado, domótica",
-    calc_step3: "3. Área Estimada",
-    calc_est_header: "Estimación Aproximada",
-    calc_est_sub: "Incluye mano de obra, demolición limpia, materiales y gestión de obra.",
-    calc_row_space: "Espacio:",
-    calc_row_finish: "Nivel:",
-    calc_row_time: "Tiempo Estimado:",
-    calc_btn_send: "Solicitar Visita Técnica",
-
-    // Services
-    serv_badge: "Nuestra Especialidad",
-    serv_title: "Servicios de Renovación de <span class=\"gradient-emerald\">Alto Nivel</span>",
-    serv_desc: "Diseñamos y ejecutamos cada detalle para garantizar espacios funcionales y vanguardistas.",
-    serv1_title: "Cocinas de Concepto Abierto",
-    serv1_desc: "Transformación integral de cocinas con islas de cuarzo o mármol, gabinetes a medida e iluminación LED.",
-    serv1_item1: "Encimeras de granito y cuarzo de alta resistencia",
-    serv1_item2: "Gabinetes con herrajes Blum® de cierre suave",
-    serv1_item3: "Instalación de electrodomésticos empotrables",
-    serv2_title: "Baños Spa & Restyle",
-    serv2_desc: "Renovación de baños principales e invitados. Duchas efecto lluvia a nivel de suelo y mamparas.",
-    serv2_item1: "Platos de ducha continuos antideslizantes",
-    serv2_item2: "Espejos con retroiluminación LED antiempañante",
-    serv2_item3: "Griferías monomando en negro mate o latón",
-    serv3_title: "Remodelación de Interiores",
-    serv3_desc: "Derribo estratégico de muros, creación de falsos techos con luz indirecta y pisos de madera.",
-    serv3_item1: "Rediseño de distribución y tabiquería seca",
-    serv3_item2: "Molduras decorativas y paneles alistonados",
-    serv3_item3: "Aislamiento acústico y térmico",
+    calc_badge: "Precios Transparentes",
+    calc_title: "Estimador de Remodelación <span class=\"gradient-emerald\">Interactivo</span>",
+    calc_desc: "Elige el tipo de trabajo, la calidad de materiales y el área para obtener un presupuesto aproximado.",
+    calc_step1: "1. Tipo de Proyecto",
+    calc_space_porch: "Porche Cubierto / Terraza",
+    calc_space_roof_sub: "Tejas de 50 años y canales continuos",
+    calc_space_roof: "Techo Arquitectónico",
+    calc_space_concrete: "Extensión de Concreto",
+    calc_space_concrete_sub: "Patio estampado & entrada de autos",
+    calc_space_porch_sub: "Estructuras de madera & piedra",
+    calc_space_interior: "Cocina y Baño",
+    calc_space_interior_sub: "Islas de cuarzo y duchas spa",
+    calc_step2: "2. Nivel de Acabados",
+    calc_finish_std: "Estándar Craftsman",
+    calc_finish_std_sub: "Materiales regionales duraderos",
+    calc_finish_prem: "Prémium Rohi",
+    calc_finish_prem_sub: "Vigas de cedro, GAF HDZ, concreto estampado",
+    calc_finish_lux: "Luxury Estate",
+    calc_finish_lux_sub: "Piedra natural, techo metálico, exterior smart",
+    calc_step3: "3. Área del Proyecto",
+    calc_est_header: "Rango de Presupuesto Estimado",
+    calc_est_sub: "Incluye mano de obra, permisos, limpieza, materiales y garantía estructural.",
+    calc_row_space: "Proyecto:",
+    calc_row_finish: "Calidad:",
+    calc_row_time: "Duración Est.:",
+    calc_btn_send: "Solicitar Presupuesto Gratis en Sitio",
 
     // Portfolio
-    port_badge: "Portafolio de Excelencia",
-    port_title: "Explora Nuestros Últimos <span class=\"gradient-emerald\">Proyectos</span>",
-    port_desc: "Cada residencia es testimonio de nuestro compromiso con el detalle y la calidad.",
+    port_badge: "Nuestros Trabajos",
+    port_title: "Proyectos Recientes <span class=\"gradient-emerald\">Destacados</span>",
+    port_desc: "Explora nuestros porches exteriores, reemplazo de techos, patios de concreto e interiores.",
     filter_all: "Todos",
-    filter_kitchens: "Cocinas",
-    filter_baths: "Baños",
+    filter_porches: "Porches y Decks",
+    filter_roofing: "Techos",
     filter_interiors: "Interiores",
-    port1_tag: "Cocina de Lujo",
-    port1_title: "Residencia Emerald Oak",
-    port2_tag: "Baño Master Spa",
-    port2_title: "Suite Baño Herringbone",
-    port3_tag: "Cocina Minimalista",
-    port3_title: "Cocina Calacatta Modern",
+    port1_tag: "Porche Cubierto",
+    port1_title: "Porche en Madera con Chimenea de Piedra",
+    port2_tag: "Techo Arquitectónico",
+    port2_title: "Techo en Teja Shingle y Fachada en Piedra",
+    port3_tag: "Cocina e Interior",
+    port3_title: "Cocina Abierta en Cuarzo y Esmeralda",
 
     // Process
-    proc_badge: "Metodología Garantizada",
-    proc_title: "El Proceso <span class=\"gradient-emerald\">Rohi Remodeling</span>",
-    proc_desc: "Garantizamos una ejecución limpia, sin imprevistos financieros y respetando fechas.",
-    proc1_title: "Visita & Concepto 3D",
-    proc1_desc: "Realizamos el levantamiento métrico en tu domicilio y creamos el concepto arquitectónico.",
-    proc2_title: "Presupuesto Cerrado",
-    proc2_desc: "Presentamos un desglose transparente de materiales y tiempos sin costos ocultos.",
-    proc3_title: "Ejecución & Limpieza",
-    proc3_desc: "Nuestro equipo trabaja bajo supervisión técnica continua manteniendo áreas protegidas.",
-    proc4_title: "Entrega & Garantía",
-    proc4_desc: "Inspección final de acabados y entrega formal con nuestro certificado de garantía de 5 años.",
+    proc_badge: "El Método Rohi",
+    proc_title: "Cómo Construimos tu <span class=\"gradient-emerald\">Hogar Soñado</span>",
+    proc_desc: "Comunicación clara, ayuda con permisos de HOA, obras limpias y entregas en fecha.",
+    proc1_title: "1. Consulta Gratis en Sitio",
+    proc1_desc: "Visitamos tu propiedad, tomamos medidas, revisamos regulaciones de HOA y diseñamos en 3D.",
+    proc2_title: "2. Cotización Detallada",
+    proc2_desc: "Recibes una propuesta transparente con costos de materiales, permisos y mano de obra.",
+    proc3_title: "3. Construcción Profesional",
+    proc3_desc: "Nuestro equipo certificado construye tu proyecto manteniendo tu jardín impecable.",
+    proc4_title: "4. Inspección & Garantía",
+    proc4_desc: "Inspección final junto a ti y entrega del Certificado de Garantía Estructural de 10 Años.",
 
     // Testimonials
-    test_badge: "Opiniones Reales",
-    test_title: "Lo que Dicen Nuestros <span class=\"gradient-emerald\">Clientes</span>",
-    test1_quote: "\"Rohi Remodeling transformó por completo nuestra cocina. El trabajo de acabados en los gabinetes verdes y la isla de mármol superó todas nuestras expectativas.\"",
-    test1_name: "Carlos & Maria M.",
-    test1_sub: "Remodelación de Cocina Integral",
-    test2_quote: "\"El nivel de pulcritud en la obra fue excelente. Protegieron todas las áreas de la casa y la nueva ducha spa es increíble.\"",
-    test2_name: "Valeria R.",
-    test2_sub: "Renovación de Baño Master",
+    test_badge: "Opiniones Verificadas",
+    test_title: "Confianza de Propietarios <span class=\"gradient-emerald\">en Todo el País</span>",
+    test1_quote: "\"Rohi Remodeling construyó nuestro porche de madera cubierto con chimenea de piedra. ¡Transformó totalmente nuestro patio! Trabajo muy profesional.\"",
+    test1_name: "James & Sarah K.",
+    test1_sub: "Porche Cubierto & Patio",
+    test2_quote: "\"Reemplazaron nuestro techo con tejas arquitectónicas GAF y remodelaron la cocina. Su limpieza y acabados fueron excelentes.\"",
+    test2_name: "Michael D.",
+    test2_sub: "Techo & Renovación de Cocina",
 
     // Contact
-    contact_badge: "Asesoría Directa",
-    contact_title: "Hablemos de tu Próximo <span class=\"gradient-emerald\">Proyecto</span>",
-    contact_desc: "Agenda una visita técnica con nuestros especialistas. Respondemos en menos de 24 horas.",
-    contact_phone_title: "Teléfono / WhatsApp",
+    contact_badge: "Contáctanos",
+    contact_title: "Agenda tu Presupuesto <span class=\"gradient-emerald\">Gratuito en Sitio</span>",
+    contact_desc: "Completa el formulario o llámanos directamente. Licenciados y asegurados.",
+    contact_phone_title: "Llámanos o Escríbenos",
     contact_email_title: "Correo Electrónico",
-    contact_hours_title: "Horario de Atención",
-    contact_hours_val: "Lun - Sáb: 8:00 AM - 7:00 PM",
+    contact_hours_title: "Horario de Oficina",
+    contact_hours_val: "Lun - Sáb: 7:00 AM - 6:00 PM EST",
     form_name_label: "Nombre Completo",
-    form_name_ph: "Ej: Roberto Gómez",
+    form_name_ph: "Ej: Juan Pérez",
     form_phone_label: "Teléfono",
-    form_phone_ph: "+1 (555) 000-0000",
-    form_space_label: "Tipo de Proyecto",
-    form_msg_label: "Detalles o Mensaje",
-    form_msg_ph: "Describe lo que deseas remodelar...",
-    form_btn_submit: "Enviar Mensaje",
+    form_phone_ph: "(555) 234-5678",
+    form_space_label: "Tipo de Proyecto Principal",
+    form_msg_label: "Detalles del Proyecto / Dirección",
+    form_msg_ph: "Cuéntanos sobre tu porche, techo, concreto o proyecto de interior...",
+    form_btn_submit: "Solicitar Cotización Gratuita",
 
     // Footer
-    footer_desc: "Especialistas en arquitectura de interiores, remodelación de alto valor y diseño personalizado.",
+    footer_desc: "Contratistas generales licenciados y asegurados especializados en porches, techos arquitectónicos, extensiones de concreto e interiores.",
     footer_nav: "Navegación",
-    footer_serv: "Servicios",
+    footer_serv: "Especialidades",
     footer_contact: "Contacto",
-    footer_rights: "&copy; 2026 Rohi Remodeling. Todos los derechos reservados.",
-    footer_sub: "Diseñado para Excelencia Residencial",
-    toast_title: "¡Mensaje Enviado con Éxito!",
-    toast_sub: "Un asesor especializado de Rohi se comunicará contigo pronto."
+    footer_rights: "&copy; 2026 Rohi Remodeling. Licenciados y Asegurados.",
+    footer_sub: "Estándares Estadounidenses de Construcción",
+    toast_title: "¡Solicitud Recibida!",
+    toast_sub: "Un especialista de Rohi se comunicará contigo en 24 horas."
   },
 
   fr: {
     // Nav
     nav_home: "Accueil",
     nav_services: "Services",
+    nav_exteriors: "Porches & Extérieurs",
     nav_transform: "Avant & Après",
     nav_estimator: "Estimateur",
     nav_projects: "Projets",
     nav_process: "Processus",
     nav_contact: "Contact",
-    nav_cta: "Obtenir un Devis",
+    nav_cta: "Devis Gratuit",
 
     // Hero
-    hero_badge: "Rénovation Résidentielle Haut de Gamme",
-    hero_title: "Redéfinir l'élégance et le confort de votre <span class=\"gradient-emerald\">maison</span>.",
-    hero_desc: "Nous transformons les espaces de vie en chefs-d'œuvre architecturaux. Conception sur mesure, matériaux d'exception et exécution certifiée.",
-    hero_btn_calc: "Calculer le Budget",
-    hero_btn_view: "Voir les Transformations",
-    stat_projects: "Projets Livrés",
-    stat_warranty: "Garantie Certifiée",
-    stat_rating: "Évaluation Clients",
-    badge_luxury_title: "Finitions de Luxe",
-    badge_luxury_sub: "Marbre, Quartz & Éclairage LED",
-    badge_warranty_title: "Garantie Rohi 5 Ans",
-    badge_warranty_sub: "Structure & Installations",
+    hero_badge: "Licencié & Assuré • Spécialistes Extérieur & Intérieur US",
+    hero_title: "Porches Sur Mesure, Toitures, Béton & <span class=\"gradient-emerald\">Rénovation</span>.",
+    hero_desc: "Valorisez votre maison. Nous construisons des porches en bois sur mesure, des toitures architecturales, des extensions en béton imprimé et des intérieurs de luxe.",
+    hero_btn_calc: "Calculateur de Budget",
+    hero_btn_view: "Explorer les Réalisations",
+    stat_projects: "Maisons Transformées",
+    stat_warranty: "Garantie Structurelle",
+    stat_rating: "Avis Clients 5 Étoiles",
+    badge_luxury_title: "Bois Noble & Pierre",
+    badge_luxury_sub: "Porches, Decks & Patios",
+    badge_warranty_title: "Garantie Structurelle 10 Ans",
+    badge_warranty_sub: "Entièrement Assuré & Certifié",
+
+    // Services
+    serv_badge: "Services Complets",
+    serv_title: "Solutions d'Excellence en <span class=\"gradient-emerald\">Extérieur & Intérieur</span>",
+    serv_desc: "Des porches couverts en bois et toitures aux allées en béton imprimé et rénovation de cuisines.",
+    
+    serv_porch_title: "Porches Couverts & Verrières Sur Mesure",
+    serv_porch_desc: "Agrandissez votre espace de vie extérieur avec des porches en cèdre, cheminées en pierre et vérandas.",
+    serv_porch_i1: "Structures en charpente bois avec poutres apparentes",
+    serv_porch_i2: "Cheminées extérieures intégrées & spots LED",
+    serv_porch_i3: "Porches fermés avec fenêtres panoramas",
+
+    serv_roof_title: "Toitures Architecturales & Bardeaux",
+    serv_roof_desc: "Remplacement complet de toiture résistante aux tempêtes avec bardeaux architecturaux GAF 50 ans et gouttières alu.",
+    serv_roof_i1: "Bardeaux architecturaux GAF Timberline HDZ® 50 ans",
+    serv_roof_i2: "Gouttières aluminium sans soudure & pare-feuilles",
+    serv_roof_i3: "Finition de toiture métallique à joint debout",
+
+    serv_concrete_title: "Extensions en Béton & Patios Imprimés",
+    serv_concrete_desc: "Agrandissement d'allées de garage, patios en béton imprimé décoratif, allées piétonnes et foyers en pierre.",
+    serv_concrete_i1: "Finitions béton imprimé & teinté décoratif",
+    serv_concrete_i2: "Extensions de dalles béton armé pour garages/RV",
+    serv_concrete_i3: "Foyers extérieurs en maçonnerie & bancs en pierre",
+
+    serv_interior_title: "Rénovation d'Intérieur de Luxe",
+    serv_interior_desc: "Cuisines à concept ouvert, suites parentales avec douche spa, aménagement de sous-sols.",
+    serv_interior_i1: "Îlots de cuisine en cascade en quartz & meubles sur mesure",
+    serv_interior_i2: "Douches à l'italienne sans marche en porcelaine",
+    serv_interior_i3: "Finition de sous-sols & réaménagement d'espaces",
 
     // Before & After
     ba_badge: "Effet Avant & Après",
     ba_title: "Glissez pour Découvrir la <span class=\"gradient-emerald\">Transformation</span>",
-    ba_desc: "Faites glisser le curseur central pour visualiser la différence entre un espace daté et notre rénovation de luxe.",
-    ba_tag_before: "Espace D'origine",
+    ba_desc: "Faites glisser le curseur pour comparer une maison d'origine et notre rénovation sur mesure.",
+    ba_tag_before: "Maison D'origine",
     ba_tag_after: "Rénovation Rohi",
 
     // Calculator
-    calc_badge: "Transparence Totale",
-    calc_title: "Estimateur de Budget <span class=\"gradient-emerald\">Interactif</span>",
-    calc_desc: "Sélectionnez les caractéristiques de votre projet et obtenez une estimation instantanée sans engagement.",
-    calc_step1: "1. Sélectionner l'Espace à Rénover",
-    calc_space_kitchen: "Cuisine Équipée",
-    calc_space_kitchen_sub: "Îlots, meuble & plan de travail",
-    calc_space_bath: "Salle de Bain de Luxe",
-    calc_space_bath_sub: "Douches, robinetterie & carrelage",
-    calc_space_home: "Rénovation Complète",
-    calc_space_home_sub: "Concept ouvert & aménagement",
-    calc_space_exterior: "Terrasse / Extérieur",
-    calc_space_exterior_sub: "Decks, pergolas & éclairage",
-    calc_step2: "2. Gamme de Finitions & Matériaux",
-    calc_finish_std: "Standard Moderne",
-    calc_finish_std_sub: "Finitions durables et soignées",
+    calc_badge: "Tarification Transparente",
+    calc_title: "Estimateur de Rénovation <span class=\"gradient-emerald\">Interactif</span>",
+    calc_desc: "Sélectionnez le type de projet, la gamme de matériaux et la surface pour obtenir une estimation.",
+    calc_step1: "1. Type de Projet",
+    calc_space_porch: "Porche Couvert / Deck",
+    calc_space_porch_sub: "Charpente bois & cheminée pierre",
+    calc_space_roof: "Toiture Architecturale",
+    calc_space_roof_sub: "Bardeaux 50 ans & gouttières alu",
+    calc_space_concrete: "Extension en Béton",
+    calc_space_concrete_sub: "Patio imprimé & allée de garage",
+    calc_space_interior: "Cuisine & Salle de Bain",
+    calc_space_interior_sub: "Îlots quartz & douches italiennes",
+    calc_step2: "2. Gamme de Finitions",
+    calc_finish_std: "Standard Craftsman",
+    calc_finish_std_sub: "Matériaux régionaux durables",
     calc_finish_prem: "Rohi Premium",
-    calc_finish_prem_sub: "Quartz, charnières à fermeture douce",
-    calc_finish_lux: "Luxe Sur Mesure",
-    calc_finish_lux_sub: "Marbre importé, domotique",
-    calc_step3: "3. Surface Estimée",
-    calc_est_header: "Budget Estimé",
-    calc_est_sub: "Comprend la main-d'œuvre, la démolition propre, les matériaux et la gestion de projet.",
-    calc_row_space: "Espace:",
-    calc_row_finish: "Finition:",
-    calc_row_time: "Délai Estimé:",
-    calc_btn_send: "Planifier une Visite Technique",
-
-    // Services
-    serv_badge: "Notre Spécialité",
-    serv_title: "Services de Rénovation de <span class=\"gradient-emerald\">Haut Niveau</span>",
-    serv_desc: "Nous concevons et exécutons chaque détail pour garantir des espaces fonctionnels et d'avant-garde.",
-    serv1_title: "Cuisines à Concept Ouvert",
-    serv1_desc: "Transformation complète de cuisines avec îlots en cascade en quartz ou marbre et éclairage architectural.",
-    serv1_item1: "Plans de travail en granit et quartz haute résistance",
-    serv1_item2: "Meubles avec charnières Blum® à fermeture douce",
-    serv1_item3: "Installation d'électroménagers encastrés",
-    serv2_title: "Salles de Bain Spa & Design",
-    serv2_desc: "Rénovation de salles de bain principales et invités. Douches à l'italienne, grands carreaux de porcelaine.",
-    serv2_item1: "Receveurs de douche continus antidérapants",
-    serv2_item2: "Miroirs rétroéclairés LED anti-buée",
-    serv2_item3: "Robinetterie noir mat & laiton brossé",
-    serv3_title: "Rénovation d'Intérieur & Agencement",
-    serv3_desc: "Démolition stratégique de cloisons, faux plafonds avec éclairage LED indirect, parquet en noyer.",
-    serv3_item1: "Redesign d'agencement & cloisons séches",
-    serv3_item2: "Moulures décoratives & panneaux en tasseaux de bois",
-    serv3_item3: "Isolation acoustique et thermique",
+    calc_finish_prem_sub: "Poutres en cèdre, GAF HDZ, béton imprimé",
+    calc_finish_lux: "Propriété de Luxe",
+    calc_finish_lux_sub: "Pierre naturelle, toit métal, extérieur connecté",
+    calc_step3: "3. Surface du Projet",
+    calc_est_header: "Fourchette de Budget Estimée",
+    calc_est_sub: "Comprend main-d'œuvre, permis, nettoyage, matériaux et garantie structurelle.",
+    calc_row_space: "Projet:",
+    calc_row_finish: "Gamme:",
+    calc_row_time: "Durée Estimée:",
+    calc_btn_send: "Demander une Visite Gratuite Sur Place",
 
     // Portfolio
-    port_badge: "Portfolio d'Excellence",
-    port_title: "Explorez Nos Derniers <span class=\"gradient-emerald\">Projets</span>",
-    port_desc: "Chaque résidence témoigne de notre engagement envers le détail et la qualité.",
-    filter_all: "Tous",
-    filter_kitchens: "Cuisines",
-    filter_baths: "Salles de Bain",
+    port_badge: "Nos Réalisations",
+    port_title: "Projets Récents <span class=\"gradient-emerald\">En Vedette</span>",
+    port_desc: "Découvrez nos porches extérieurs, toitures, patios en béton et intérieurs rénovés.",
+    filter_all: "Tous les Projets",
+    filter_porches: "Porches & Decks",
+    filter_roofing: "Toitures",
     filter_interiors: "Intérieurs",
-    port1_tag: "Cuisine de Luxe",
-    port1_title: "Résidence Emerald Oak",
-    port2_tag: "Suite Spa Master",
-    port2_title: "Suite Bain Herringbone",
-    port3_tag: "Cuisine Minimaliste",
-    port3_title: "Cuisine Calacatta Modern",
+    port1_tag: "Porche Couvert",
+    port1_title: "Porche en Bois & Cheminée en Pierre",
+    port2_tag: "Toiture Architecturale",
+    port2_title: "Toiture Bardeaux & Façade Pierre",
+    port3_tag: "Cuisine & Intérieur",
+    port3_title: "Cuisine Ouverte en Quartz & Émeraude",
 
     // Process
-    proc_badge: "Méthodologie Garantie",
-    proc_title: "Le Processus <span class=\"gradient-emerald\">Rohi Remodeling</span>",
-    proc_desc: "Nous garantissons une exécution propre, sans frais cachés et un respect strict des délais.",
-    proc1_title: "Visite & Concept 3D",
-    proc1_desc: "Nous réalisons le relevé métrique à votre domicile et créons le concept architectural.",
-    proc2_title: "Devis Forfaitaire",
-    proc2_desc: "Nous présentons un budget transparent détaillé sans frais cachés pendant le chantier.",
-    proc3_title: "Exécution & Propreté",
-    proc3_desc: "Notre équipe travaille sous supervision technique continue en protégeant les zones de vie.",
-    proc4_title: "Livraison & Garantie",
-    proc4_desc: "Inspection finale des finitions avec vous et remise du certificat de garantie de 5 ans.",
+    proc_badge: "Le Procédé Rohi",
+    proc_title: "Comment Nous Construisons Votre <span class=\"gradient-emerald\">Maison de Rêve</span>",
+    proc_desc: "Communication claire, aide aux permis HOA, chantiers propres et délais garantis.",
+    proc1_title: "1. Consultation Gratuite Sur Place",
+    proc1_desc: "Nous visitons votre propriété, prenons les mesures et dessinons le concept en 3D.",
+    proc2_title: "2. Devis Détaillé Transparent",
+    proc2_desc: "Vous recevez une proposition détaillée avec matériaux, permis et main-d'œuvre sans surprise.",
+    proc3_title: "3. Construction Professionnelle",
+    proc3_desc: "Notre équipe certifiée réalise votre projet tout en gardant votre terrain propre.",
+    proc4_title: "4. Inspection Finale & Garantie",
+    proc4_desc: "Inspection avec le propriétaire et remise du Certificat de Garantie Structurelle 10 Ans.",
 
     // Testimonials
-    test_badge: "Avis Clients Réels",
-    test_title: "Ce Que Disent Nos <span class=\"gradient-emerald\">Clients</span>",
-    test1_quote: "\"Rohi Remodeling a totalement métamorphosé notre cuisine. La qualité des meubles verts et de l'îlot en marbre a dépassé toutes nos attentes.\"",
-    test1_name: "Carlos & Maria M.",
-    test1_sub: "Rénovation de Cuisine Complète",
-    test2_quote: "\"Le niveau de propreté sur le chantier était remarquable. L'équipe a protégé toute notre maison et notre nouvelle douche spa est incroyable.\"",
-    test2_name: "Valeria R.",
-    test2_sub: "Rénovation Salle de Bain Master",
+    test_badge: "Avis Vérifiés",
+    test_title: "Recommandé par des Propriétaires <span class=\"gradient-emerald\">Partout au Pays</span>",
+    test1_quote: "\"Rohi Remodeling a construit notre porche couvert en bois avec une cheminée en pierre. Cela a totalement transformé notre extérieur! Équipe très pro.\"",
+    test1_name: "James & Sarah K.",
+    test1_sub: "Porche Couvert & Patio",
+    test2_quote: "\"Remplacement de notre toiture en bardeaux GAF et rénovation de cuisine. Travail et nettoyage impeccables.\"",
+    test2_name: "Michael D.",
+    test2_sub: "Toiture & Rénovation Cuisine",
 
     // Contact
-    contact_badge: "Consultation Directe",
-    contact_title: "Parlons de Votre Prochain <span class=\"gradient-emerald\">Projet</span>",
-    contact_desc: "Planifiez une visite technique avec nos spécialistes. Réponse en moins de 24 heures.",
-    contact_phone_title: "Téléphone / WhatsApp",
-    contact_email_title: "Adresse Email",
-    contact_hours_title: "Heures d'Ouverture",
-    contact_hours_val: "Lun - Sam: 8h00 - 19h00",
+    contact_badge: "Contactez-Nous",
+    contact_title: "Demandez Votre Devis <span class=\"gradient-emerald\">Gratuit Sur Place</span>",
+    contact_desc: "Remplissez le formulaire ou appelez-nous directement. Licencié et assuré.",
+    contact_phone_title: "Téléphone / SMS",
+    contact_email_title: "Demande par Email",
+    contact_hours_title: "Heures de Bureau",
+    contact_hours_val: "Lun - Sam: 7h00 - 18h00 EST",
     form_name_label: "Nom Complet",
-    form_name_ph: "ex: Robert Gomez",
+    form_name_ph: "ex: Jean Dupont",
     form_phone_label: "Téléphone",
-    form_phone_ph: "+1 (555) 000-0000",
-    form_space_label: "Type de Projet",
-    form_msg_label: "Détails du Projet",
-    form_msg_ph: "Décrivez ce que vous souhaitez rénover...",
-    form_btn_submit: "Envoyer le Message",
+    form_phone_ph: "(555) 234-5678",
+    form_space_label: "Type de Projet Principal",
+    form_msg_label: "Détails du Projet / Adresse",
+    form_msg_ph: "Parlez-nous de votre porche, toiture, béton ou projet d'intérieur...",
+    form_btn_submit: "Envoyer la Demande de Devis Gratuit",
 
     // Footer
-    footer_desc: "Spécialistes de l'architecture d'intérieur, de la rénovation haut de gamme et du design sur mesure.",
+    footer_desc: "Entrepreneur général licencié & assuré spécialisé dans les porches sur mesure, toitures architecturales, extensions en béton et intérieurs de luxe.",
     footer_nav: "Navigation",
-    footer_serv: "Services",
+    footer_serv: "Spécialités",
     footer_contact: "Contact",
-    footer_rights: "&copy; 2026 Rohi Remodeling. Tous droits réservés.",
-    footer_sub: "Conçu pour l'Excellence Résidentielle",
-    toast_title: "Message Envoyé avec Succès!",
-    toast_sub: "Un conseiller Rohi vous contactera sous peu."
+    footer_rights: "&copy; 2026 Rohi Remodeling. Licencié & Assuré.",
+    footer_sub: "Normes de Construction Américaines",
+    toast_title: "Demande de Devis Reçue!",
+    toast_sub: "Un spécialiste Rohi vous recontactera sous 24 heures."
   }
 };
 
@@ -475,7 +505,6 @@ function setLanguage(lang) {
 
   const dict = translations[lang];
 
-  // Update elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (dict[key]) {
@@ -483,7 +512,6 @@ function setLanguage(lang) {
     }
   });
 
-  // Update elements with placeholders
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.dataset.i18nPh;
     if (dict[key]) {
@@ -492,9 +520,6 @@ function setLanguage(lang) {
   });
 }
 
-/* --------------------------------------------------------------------------
-   1. Header Scroll & Mobile Navigation
-   -------------------------------------------------------------------------- */
 function initHeader() {
   const header = document.querySelector('.header');
   const mobileToggle = document.getElementById('mobileToggle');
@@ -529,9 +554,6 @@ function initHeader() {
   }
 }
 
-/* --------------------------------------------------------------------------
-   2. Interactive Before / After Transformation Slider
-   -------------------------------------------------------------------------- */
 function initBeforeAfterSlider() {
   const sliderRange = document.getElementById('baRange');
   const beforeWrapper = document.getElementById('baBeforeWrapper');
@@ -551,9 +573,6 @@ function initBeforeAfterSlider() {
   updateSliderPosition(50);
 }
 
-/* --------------------------------------------------------------------------
-   3. Remodeling Cost Estimator (Interactive Calculator)
-   -------------------------------------------------------------------------- */
 function initCalculator() {
   const spaceButtons = document.querySelectorAll('#spaceOptions .calc-btn-option');
   const finishButtons = document.querySelectorAll('#finishOptions .calc-btn-option');
@@ -567,24 +586,24 @@ function initCalculator() {
   const sendEstimateBtn = document.getElementById('sendEstimateBtn');
 
   let state = {
-    space: 'cocina',
-    spaceKey: 'calc_space_kitchen',
+    space: 'porch',
+    spaceKey: 'calc_space_porch',
     finish: 'premium',
     finishKey: 'calc_finish_prem',
-    area: 400 // sq ft
+    area: 500
   };
 
   const baseRates = {
-    cocina: { base: 35, timeMultiplier: 0.01 },
-    bano: { base: 42, timeMultiplier: 0.012 },
-    total: { base: 30, timeMultiplier: 0.008 },
-    exterior: { base: 22, timeMultiplier: 0.005 }
+    porch: { base: 45, timeMultiplier: 0.008 },
+    roof: { base: 18, timeMultiplier: 0.004 },
+    concrete: { base: 22, timeMultiplier: 0.005 },
+    interior: { base: 38, timeMultiplier: 0.01 }
   };
 
   const finishMultipliers = {
     standard: 1.0,
-    premium: 1.35,
-    luxury: 1.8
+    premium: 1.4,
+    luxury: 1.95
   };
 
   function setupOptionGroup(buttons, callback) {
@@ -617,7 +636,7 @@ function initCalculator() {
   }
 
   function calculate() {
-    const spaceConfig = baseRates[state.space] || baseRates.cocina;
+    const spaceConfig = baseRates[state.space] || baseRates.porch;
     const finishMult = finishMultipliers[state.finish] || 1.0;
 
     const pricePerSqFt = spaceConfig.base * finishMult;
@@ -632,7 +651,6 @@ function initCalculator() {
       displayPrice.textContent = `$${minEstimate.toLocaleString()} - $${maxEstimate.toLocaleString()} USD`;
     }
 
-    // Dynamic translate for output rows
     const dict = translations[currentLang] || translations.en;
     if (displaySpaceName) displaySpaceName.textContent = dict[state.spaceKey] || state.spaceKey;
     if (displayFinishName) displayFinishName.textContent = dict[state.finishKey] || state.finishKey;
@@ -648,7 +666,7 @@ function initCalculator() {
       if (messageField) {
         const dict = translations[currentLang] || translations.en;
         const spaceName = dict[state.spaceKey] || state.space;
-        messageField.value = `I estimated a project for ${spaceName} (${state.area} sq ft) with budget ${displayPrice.textContent}. I would like to schedule a technical visit.`;
+        messageField.value = `Hi Rohi Remodeling, I estimated a project for ${spaceName} (${state.area} sq ft) with budget ${displayPrice.textContent}. Please contact me for a free on-site estimate.`;
       }
 
       const contactSection = document.getElementById('contacto');
@@ -661,9 +679,6 @@ function initCalculator() {
   calculate();
 }
 
-/* --------------------------------------------------------------------------
-   4. Portfolio Gallery Filtering
-   -------------------------------------------------------------------------- */
 function initPortfolioFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const portfolioCards = document.querySelectorAll('.portfolio-card');
@@ -689,9 +704,6 @@ function initPortfolioFilter() {
   });
 }
 
-/* --------------------------------------------------------------------------
-   5. Contact Form Toast Notification
-   -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   const toast = document.getElementById('toastMsg');
