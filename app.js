@@ -74,8 +74,8 @@ const translations = {
     ba_badge: "Before & After Showcase",
     ba_title: "Slide to Discover the <span class=\"gradient-emerald\">Transformation</span>",
     ba_desc: "Drag the center controller to view the striking difference between an outdated home and our custom remodeling.",
-    ba_tag_before: "Original Home",
-    ba_tag_after: "Rohi Renovation",
+    ba_tag_before: "Before",
+    ba_tag_after: "After",
 
     // Calculator
     calc_badge: "Transparent US Pricing",
@@ -119,6 +119,8 @@ const translations = {
     port2_title: "Full Shingle Roof & Stone Facade",
     port3_tag: "Kitchen & Interior",
     port3_title: "Emerald & Quartz Open Kitchen",
+    port4_tag: "Outdoor Living",
+    port4_title: "Covered Patio & Outdoor Living Space",
 
     // Process
     proc_badge: "The Rohi Method",
@@ -230,8 +232,8 @@ const translations = {
     ba_badge: "Efecto Antes y Después",
     ba_title: "Desliza para ver la <span class=\"gradient-emerald\">Transformación</span>",
     ba_desc: "Mueve el controlador para comparar una propiedad original frente a nuestra renovación a medida.",
-    ba_tag_before: "Casa Original",
-    ba_tag_after: "Remodelación Rohi",
+    ba_tag_before: "Antes",
+    ba_tag_after: "Después",
 
     // Calculator
     calc_badge: "Precios Transparentes",
@@ -275,6 +277,8 @@ const translations = {
     port2_title: "Techo en Teja Shingle y Fachada en Piedra",
     port3_tag: "Cocina e Interior",
     port3_title: "Cocina Abierta en Cuarzo y Esmeralda",
+    port4_tag: "Espacio Exterior",
+    port4_title: "Patio Cubierto y Sala al Aire Libre",
 
     // Process
     proc_badge: "El Método Rohi",
@@ -386,8 +390,8 @@ const translations = {
     ba_badge: "Effet Avant & Après",
     ba_title: "Glissez pour Découvrir la <span class=\"gradient-emerald\">Transformation</span>",
     ba_desc: "Faites glisser le curseur pour comparer une maison d'origine et notre rénovation sur mesure.",
-    ba_tag_before: "Maison D'origine",
-    ba_tag_after: "Rénovation Rohi",
+    ba_tag_before: "Avant",
+    ba_tag_after: "Après",
 
     // Calculator
     calc_badge: "Tarification Transparente",
@@ -431,6 +435,8 @@ const translations = {
     port2_title: "Toiture Bardeaux & Façade Pierre",
     port3_tag: "Cuisine & Intérieur",
     port3_title: "Cuisine Ouverte en Quartz & Émeraude",
+    port4_tag: "Espace Extérieur",
+    port4_title: "Patio Couvert & Salon de Jardin",
 
     // Process
     proc_badge: "Le Procédé Rohi",
@@ -556,14 +562,12 @@ function initHeader() {
 
 function initBeforeAfterSlider() {
   const sliderRange = document.getElementById('baRange');
-  const beforeWrapper = document.getElementById('baBeforeWrapper');
-  const handle = document.getElementById('baHandle');
+  const sliderWrapper = document.querySelector('.ba-wrapper');
 
-  if (!sliderRange || !beforeWrapper || !handle) return;
+  if (!sliderRange || !sliderWrapper) return;
 
   function updateSliderPosition(val) {
-    beforeWrapper.style.width = `${val}%`;
-    handle.style.left = `${val}%`;
+    sliderWrapper.style.setProperty('--slider-pos', `${val}%`);
   }
 
   sliderRange.addEventListener('input', (e) => {

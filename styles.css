@@ -52,6 +52,11 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -62,7 +67,6 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -221,7 +225,7 @@ img {
 }
 
 .logo-img {
-  height: 64px;
+  height: 84px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.35));
@@ -240,7 +244,7 @@ img {
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 800;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -248,7 +252,7 @@ img {
 }
 
 .brand-sub {
-  font-size: 0.68rem;
+  font-size: 0.76rem;
   letter-spacing: 2.5px;
   color: var(--emerald-bright);
   text-transform: uppercase;
@@ -531,7 +535,7 @@ img {
 }
 
 .ba-slider-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   border-radius: var(--radius-lg);
@@ -540,12 +544,16 @@ img {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
   user-select: none;
   touch-action: pan-y;
+  background-color: #0c1322;
 }
 
 .ba-wrapper {
+  --slider-pos: 50%;
   position: relative;
   width: 100%;
-  height: 520px;
+  aspect-ratio: 1080 / 975;
+  height: auto;
+  max-height: 750px;
 }
 
 .ba-img-after {
@@ -555,51 +563,53 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .ba-img-before-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%; /* JS controlled */
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+  clip-path: polygon(0 0, var(--slider-pos, 50%) 0, var(--slider-pos, 50%) 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, var(--slider-pos, 50%) 0, var(--slider-pos, 50%) 100%, 0 100%);
   z-index: 2;
-  border-right: 3px solid var(--emerald-bright);
+  pointer-events: none;
 }
 
 .ba-img-before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1000px; /* match container width */
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: none;
+  display: block;
 }
 
 .ba-tag {
   position: absolute;
-  top: 20px;
-  padding: 8px 18px;
+  top: 14px;
+  padding: 6px 14px;
   background: rgba(10, 15, 29, 0.85);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-full);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   z-index: 5;
 }
 
 .tag-before {
-  left: 20px;
+  left: 14px;
   color: var(--text-muted);
 }
 
 .tag-after {
-  right: 20px;
+  right: 14px;
   color: var(--emerald-bright);
   border-color: var(--border-emerald);
 }
@@ -609,13 +619,14 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%; /* JS controlled */
-  width: 4px;
+  left: var(--slider-pos, 50%);
+  width: 3px;
   background: var(--emerald-bright);
   z-index: 10;
   cursor: ew-resize;
   transform: translateX(-50%);
   box-shadow: 0 0 15px var(--emerald-bright);
+  pointer-events: none;
 }
 
 .ba-handle-button {
@@ -623,17 +634,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 52px;
-  height: 52px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--bg-header);
-  border: 3px solid var(--emerald-bright);
+  border: 2px solid var(--emerald-bright);
   color: var(--emerald-bright);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+  font-size: 0.85rem;
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.5);
 }
 
 .ba-slider-range {
@@ -658,7 +669,7 @@ img {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -948,7 +959,7 @@ img {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 28px;
 }
 
@@ -1084,7 +1095,7 @@ img {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -1204,6 +1215,12 @@ img {
   border-radius: var(--radius-lg);
   padding: 40px;
   box-shadow: var(--shadow-lg);
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .form-group {
@@ -1374,28 +1391,86 @@ img {
   .nav-menu.open {
     transform: translateY(0);
   }
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
+    word-break: break-word;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
   }
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 16px;
   }
   .floating-badge {
-    position: relative;
-    bottom: auto;
+    position: static;
+    margin-top: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .badge-1, .badge-2 {
     left: auto;
     right: auto;
     top: auto;
-    margin-top: 15px;
+    bottom: auto;
+  }
+  .calculator-card {
+    padding: 24px 16px;
+  }
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-box {
+    padding: 24px 16px;
+  }
+  .form-row-2col {
+    grid-template-columns: 1fr;
   }
   .ba-wrapper {
-    height: 380px;
+    height: auto;
   }
   .process-grid {
     grid-template-columns: 1fr;
   }
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+  .logo-img {
+    height: 56px;
+  }
+  .brand-name {
+    font-size: 1.15rem;
+  }
+  .brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 1.8px;
+  }
+  .header-container .btn-primary {
+    display: none;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .calc-price-display {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.85rem;
   }
 }
