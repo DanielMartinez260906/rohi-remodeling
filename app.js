@@ -24,21 +24,21 @@ const translations = {
     nav_cta: "Free Estimate",
 
     // Hero
-    hero_badge: "Licensed & Insured • State of Georgia",
+    hero_badge: "Licensed & Insured • North Georgia",
     hero_title: "Custom Decks, Screen Porches & Outdoor <span class=\"gradient-emerald\">Construction</span>.",
-    hero_desc: "Hands-on remodeling and outdoor construction for homeowners across the State of Georgia. We build custom multi-level decks, screen porches, and concrete extensions.",
+    hero_desc: "Hands-on remodeling and outdoor construction across North Georgia: Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek, and surrounding areas. We build custom multi-level decks, screen porches, and concrete extensions.",
     hero_btn_calc: "Request Estimate",
     hero_btn_view: "Explore Transformations",
     stat_projects: "Local Homes Transformed",
-    stat_location: "Serving the State of Georgia",
+    stat_location: "Serving North Georgia",
     stat_rating: "5-Star Customer Rating",
     badge_luxury_title: "Custom Decks & Porches",
-    badge_luxury_sub: "Serving the State of Georgia",
+    badge_luxury_sub: "North Georgia Specialists",
 
     // Services
     serv_badge: "Our Specialties",
-    serv_title: "Built Right in <span class=\"gradient-emerald\">Georgia</span>",
-    serv_desc: "Specialized deck building, screened porches, patios, and concrete extensions crafted for Georgia homes.",
+    serv_title: "Built Right Across <span class=\"gradient-emerald\">North Georgia</span>",
+    serv_desc: "Specialized deck building, screened porches, patios, and concrete extensions crafted for homes in North Georgia.",
     
     serv_porch_title: "Custom Decks & Screen Porches",
     serv_porch_desc: "Expand your outdoor living with custom timber decks, screened porches, elevated stairs, and covered patios.",
@@ -61,14 +61,16 @@ const translations = {
     // Before & After
     ba_badge: "Before & After",
     ba_title: "Slide to Discover the <span class=\"gradient-emerald\">Transformation</span>",
-    ba_desc: "Drag the center controller to view the striking craftsmanship delivered across Georgia.",
+    ba_desc: "Drag the center controller to view the striking craftsmanship delivered across North Georgia.",
+    ba_t1_title: "Project 01 • Exterior Remodel & Renovation",
+    ba_t2_title: "Project 02 • Outdoor Living & Porch Addition",
     ba_tag_before: "Before",
     ba_tag_after: "After",
 
     // Portfolio
     port_badge: "Featured Work",
     port_title: "Recent Outdoor <span class=\"gradient-emerald\">Projects</span>",
-    port_desc: "Take a look at our recent deck builds, screen porches, and exterior framing across the State of Georgia.",
+    port_desc: "Take a look at our recent deck builds, screen porches, and exterior framing across North Georgia communities.",
     filter_all: "All Projects",
     filter_porches: "Decks & Porches",
     filter_interiors: "Additions & Concrete",
@@ -82,41 +84,43 @@ const translations = {
     port4_title: "Multi-Story Exterior Stairs & Deck",
 
     // Testimonials
-    test_badge: "Client Reviews",
-    test_title: "Trusted Across the <span class=\"gradient-emerald\">State of Georgia</span>",
-    test1_quote: "\"Rohi Remodeling built our multi-level covered deck. It completely elevated our backyard living space! Professional crew and finished right on time.\"",
-    test1_name: "James & Sarah K.",
-    test1_sub: "Covered Deck & Porch in Georgia",
-    test2_quote: "\"Top-notch carpentry and clean worksite from start to finish. Our elevated deck and stairs are rock solid and look incredible.\"",
-    test2_name: "Michael D.",
-    test2_sub: "Elevated Deck Build in Georgia",
+    test_badge: "Verified Client Reviews",
+    test_title: "Trusted Across <span class=\"gradient-emerald\">North Georgia</span>",
+    test1_quote: "\"We used Rohi Remodeling to completely replace our aging and failing deck. From the initial meeting through completion they were exceptional. They showed up early and stay late, working hard until the project was complete. Carlos and Gilary were good communicators and seamlessly made any changes to the plan that we requested. The new deck is well built, we have an eye for quality and detail, they exceeded our expectations with a safe, functional, overbuilt and beautiful outdoor family space. I would highly recommend them and will use them on any projects we have in the future.\"",
+    test1_name: "Stephen Adams",
+    test1_sub: "Google Review • Verified Homeowner",
+    test2_quote: "\"We had an excellent experience with this company building our screened porch. The quality of their work and craftsmanship truly exceeded our expectations. From the beginning, they took the time to answer all of our questions and provided thoughtful recommendations that helped us make the best decisions for our home.<br><br>They were professional, respectful, and detailed-oriented throughout the entire project. They went above and beyond to protect our plants and surrounding areas, and made sure everything was cleaned up at the end of each day, which we really appreciated.<br><br>The finished porch looks fantastic, and it's clear they take pride in their work. We highly recommend them to anyone looking for quality construction/remodeling and a team you can trust.\"",
+    test2_name: "Dan & Denise B.",
+    test2_sub: "Google Review • Verified Homeowner",
 
     // Contact
     contact_badge: "Contact the Crew",
     contact_title: "Schedule Your Free On-Site <span class=\"gradient-emerald\">Estimate</span>",
-    contact_desc: "Serving homeowners across the entire State of Georgia. Fill out the form or call us directly.",
+    contact_desc: "Serving North Georgia: Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek, and surrounding areas. Fill out the form or call us directly.",
     contact_phone_title: "Call / Text Us",
     contact_email_title: "Email Inquiry",
     contact_hours_title: "Service Area",
-    contact_hours_val: "State of Georgia",
+    contact_hours_val: "North Georgia (Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek & Surrounding Areas)",
     form_name_label: "Full Name",
     form_name_ph: "e.g. John Miller",
     form_phone_label: "Phone Number",
     form_phone_ph: "(678) 629-9589",
+    form_email_label: "Email Address",
+    form_email_ph: "e.g. john@example.com",
     form_space_label: "Primary Project Type",
     form_msg_label: "Project Details / Location",
-    form_msg_ph: "Tell us about your deck, porch, concrete, or remodel project in Georgia...",
-    form_btn_submit: "Submit Request for Free Estimate",
+    form_msg_ph: "Tell us about your project in North Georgia (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
+    form_btn_submit: "Send Estimate Request via Email",
 
     // Footer
-    footer_desc: "Licensed & insured contractor specializing in custom decks, screen porches, concrete extensions, and home additions in Georgia.",
+    footer_desc: "Licensed & insured contractor specializing in custom decks, screen porches, concrete extensions, and home additions in North Georgia.",
     footer_nav: "Navigation",
     footer_serv: "Specialties",
     footer_contact: "Contact Info",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licensed & Insured.",
-    footer_sub: "Quality Craftsmanship in Georgia",
-    toast_title: "Estimate Request Received!",
-    toast_sub: "Our team will call you within 24 hours to schedule your on-site visit."
+    footer_sub: "Quality Craftsmanship in North Georgia",
+    toast_title: "Estimate Request Ready!",
+    toast_sub: "Opening your email to send to Rohiremodeling@hotmail.com..."
   },
 
   es: {
@@ -129,21 +133,21 @@ const translations = {
     nav_cta: "Cotización Gratis",
 
     // Hero
-    hero_badge: "Licenciados y Asegurados • Estado de Georgia",
+    hero_badge: "Licenciados y Asegurados • Norte de Georgia",
     hero_title: "Decks a Medida, Porches y Construcción <span class=\"gradient-emerald\">Exterior</span>.",
-    hero_desc: "Construcción artesanal y remodelación exterior para hogares en todo el estado de Georgia. Construimos decks de varios niveles, porches con mosquiteros y extensiones de concreto.",
+    hero_desc: "Construcción artesanal y remodelación exterior en el Norte de Georgia: Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek y áreas cercanas. Construimos decks de varios niveles, porches con mosquiteros y extensiones de concreto.",
     hero_btn_calc: "Solicitar Cotización",
     hero_btn_view: "Explorar Trabajos",
     stat_projects: "Casas Transformadas",
-    stat_location: "Servicio en el Estado de Georgia",
+    stat_location: "Servicio en el Norte de Georgia",
     stat_rating: "Valoración 5 Estrellas",
     badge_luxury_title: "Decks y Porches a Medida",
-    badge_luxury_sub: "Servicio en el Estado de Georgia",
+    badge_luxury_sub: "Especialistas en Norte de Georgia",
 
     // Services
     serv_badge: "Nuestras Especialidades",
-    serv_title: "Construido con Calidad en <span class=\"gradient-emerald\">Georgia</span>",
-    serv_desc: "Especialistas en construcción de decks, porches cerrados, patios y concreto para casas en Georgia.",
+    serv_title: "Construido con Calidad en <span class=\"gradient-emerald\">Norte de Georgia</span>",
+    serv_desc: "Especialistas en construcción de decks, porches cerrados, patios y concreto para casas en el Norte de Georgia.",
     
     serv_porch_title: "Decks a Medida y Porches Cerrados",
     serv_porch_desc: "Amplía tu espacio exterior con decks de madera a medida, porches con mosquiteros, escaleras exteriores y terrazas cubiertas.",
@@ -166,14 +170,16 @@ const translations = {
     // Before & After
     ba_badge: "Antes y Después",
     ba_title: "Desliza para ver la <span class=\"gradient-emerald\">Transformación</span>",
-    ba_desc: "Mueve el controlador para comparar una propiedad original frente a nuestra construcción en Georgia.",
+    ba_desc: "Mueve el controlador para comparar una propiedad original frente a nuestra construcción en el Norte de Georgia.",
+    ba_t1_title: "Proyecto 01 • Remodelación Exterior de Casa",
+    ba_t2_title: "Proyecto 02 • Construcción de Deck y Espacio Exterior",
     ba_tag_before: "Antes",
     ba_tag_after: "Después",
 
     // Portfolio
     port_badge: "Trabajos Destacados",
     port_title: "Proyectos Exteriores <span class=\"gradient-emerald\">Recientes</span>",
-    port_desc: "Explora nuestros decks, porches y estructuras construidas en todo el estado de Georgia.",
+    port_desc: "Explora nuestros decks, porches y estructuras construidas en comunidades del Norte de Georgia.",
     filter_all: "Todos",
     filter_porches: "Decks y Porches",
     filter_interiors: "Adiciones y Concreto",
@@ -187,41 +193,43 @@ const translations = {
     port4_title: "Escalera y Deck Elevado de Varios Pisos",
 
     // Testimonials
-    test_badge: "Opiniones Verificadas",
-    test_title: "Confianza en Todo el Estado de <span class=\"gradient-emerald\">Georgia</span>",
-    test1_quote: "\"Rohi Remodeling construyó nuestro deck cubierto de dos niveles. ¡Transformó por completo nuestro patio trasero! Equipo muy profesional y cumplido con los tiempos.\"",
-    test1_name: "James & Sarah K.",
-    test1_sub: "Deck y Porche Cubierto en Georgia",
-    test2_quote: "\"Excelente carpintería estructural y un sitio de trabajo impecable de principio a fin. Nuestro deck elevado quedó firme y espectacular.\"",
-    test2_name: "Michael D.",
-    test2_sub: "Deck Elevado en Georgia",
+    test_badge: "Reseñas Verificadas de Clientes",
+    test_title: "Confianza en el <span class=\"gradient-emerald\">Norte de Georgia</span>",
+    test1_quote: "\"Contratamos a Rohi Remodeling para reemplazar completamente nuestro deck deteriorado. Desde la reunión inicial hasta la finalización fueron excepcionales. Llegaban temprano y se quedaban hasta tarde, trabajando duro hasta terminar el proyecto. Carlos y Gilary se comunicaron de maravilla y adaptaron sin problemas cualquier cambio que pedimos. El nuevo deck está muy bien construido; tenemos buen ojo para la calidad y el detalle, y superaron nuestras expectativas con un espacio familiar seguro, funcional, sólido y hermoso. Los recomiendo ampliamente y los contrataré para futuros proyectos.\"",
+    test1_name: "Stephen Adams",
+    test1_sub: "Google Review • Reemplazo de Deck",
+    test2_quote: "\"Tuvimos una experiencia excelente con esta empresa construyendo nuestro porche con mosquitero (screened porch). La calidad de su trabajo y su artesanía realmente superaron nuestras expectativas. Desde el principio se tomaron el tiempo para responder todas nuestras dudas y nos dieron recomendaciones muy acertadas para tomar la mejor decisión.<br><br>Fueron profesionales, respetuosos y atentos al detalle en todo momento. Hicieron todo lo posible por proteger nuestras plantas y áreas alrededor, y se aseguraron de dejar todo limpio al final de cada día, lo cual apreciamos mucho.<br><br>El porche terminado se ve fantástico y es evidente el orgullo que sienten por su trabajo. Los recomendamos ampliamente a cualquiera que busque una construcción de calidad y un equipo de confianza.\"",
+    test2_name: "Dan & Denise B.",
+    test2_sub: "Google Review • Porche con Mosquiteros",
 
     // Contact
     contact_badge: "Habla con el Equipo",
     contact_title: "Agenda tu Cotización <span class=\"gradient-emerald\">Gratis en Sitio</span>",
-    contact_desc: "Damos servicio a propietarios en todo el estado de Georgia. Escríbenos o llámanos directamente.",
+    contact_desc: "Damos servicio en el Norte de Georgia: Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek y áreas cercanas. Escríbenos o llámanos directamente.",
     contact_phone_title: "Llámanos o Escríbenos",
     contact_email_title: "Correo Electrónico",
     contact_hours_title: "Área de Servicio",
-    contact_hours_val: "Estado de Georgia",
+    contact_hours_val: "Norte de Georgia (Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek y Áreas Cercanas)",
     form_name_label: "Nombre Completo",
     form_name_ph: "Ej: Juan Pérez",
     form_phone_label: "Teléfono",
     form_phone_ph: "(678) 629-9589",
+    form_email_label: "Correo Electrónico",
+    form_email_ph: "ej: juan@correo.com",
     form_space_label: "Tipo de Proyecto Principal",
     form_msg_label: "Detalles del Proyecto / Dirección",
-    form_msg_ph: "Cuéntanos sobre tu deck, porche, concreto o remodelación en Georgia...",
-    form_btn_submit: "Solicitar Cotización Gratuita",
+    form_msg_ph: "Cuéntanos sobre tu proyecto en el Norte de Georgia (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
+    form_btn_submit: "Enviar Solicitud por Correo",
 
     // Footer
-    footer_desc: "Contratistas generales licenciados y asegurados especializados en decks, porches cerrados, concreto y ampliaciones en Georgia.",
+    footer_desc: "Contratistas generales licenciados y asegurados especializados en decks, porches cerrados, concreto y ampliaciones en el Norte de Georgia.",
     footer_nav: "Navegación",
     footer_serv: "Especialidades",
     footer_contact: "Contacto",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licenciados y Asegurados.",
-    footer_sub: "Calidad de Construcción en Georgia",
-    toast_title: "¡Solicitud Recibida!",
-    toast_sub: "Nuestro equipo se comunicará contigo en menos de 24 horas para coordinar la visita."
+    footer_sub: "Calidad de Construcción en Norte de Georgia",
+    toast_title: "¡Solicitud Lista!",
+    toast_sub: "Abriendo tu correo para enviar a Rohiremodeling@hotmail.com..."
   },
 
   fr: {
@@ -234,21 +242,21 @@ const translations = {
     nav_cta: "Devis Gratuit",
 
     // Hero
-    hero_badge: "Licencié & Assuré • État de Géorgie",
+    hero_badge: "Licencié & Assuré • Nord de la Géorgie",
     hero_title: "Terrasses Sur Mesure, Vérandas & <span class=\"gradient-emerald\">Construction</span>.",
-    hero_desc: "Construction extérieure et rénovation artisanale pour les propriétaires dans tout l'État de Géorgie. Terrasses en bois multi-niveaux, vérandas et béton.",
+    hero_desc: "Construction extérieure et rénovation artisanale dans le Nord de la Géorgie : Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek et les environs. Terrasses en bois multi-niveaux, vérandas et béton.",
     hero_btn_calc: "Demander un Devis",
     hero_btn_view: "Explorer les Réalisations",
     stat_projects: "Maisons Transformées",
-    stat_location: "Au Service de l'État de Géorgie",
+    stat_location: "Au Service du Nord de la Géorgie",
     stat_rating: "Avis Clients 5 Étoiles",
     badge_luxury_title: "Terrasses & Vérandas",
-    badge_luxury_sub: "Au Service de l'État de Géorgie",
+    badge_luxury_sub: "Spécialistes du Nord de la Géorgie",
 
     // Services
     serv_badge: "Nos Spécialités",
-    serv_title: "Construit avec Rigueur en <span class=\"gradient-emerald\">Géorgie</span>",
-    serv_desc: "Spécialistes en terrasses en bois, porches fermés, patios et extensions de béton pour maisons en Géorgie.",
+    serv_title: "Construit avec Rigueur dans le <span class=\"gradient-emerald\">Nord de la Géorgie</span>",
+    serv_desc: "Spécialistes en terrasses en bois, porches fermés, patios et extensions de béton dans le Nord de la Géorgie.",
     
     serv_porch_title: "Terrasses en Bois & Vérandas",
     serv_porch_desc: "Agrandissez votre espace de vie avec des terrasses sur mesure, porches fermés avec moustiquaires et escaliers extérieurs.",
@@ -271,14 +279,16 @@ const translations = {
     // Before & After
     ba_badge: "Avant & Après",
     ba_title: "Glissez pour Découvrir la <span class=\"gradient-emerald\">Transformation</span>",
-    ba_desc: "Faites glisser le curseur pour comparer les réalisations conçues pour nos clients en Géorgie.",
+    ba_desc: "Faites glisser le curseur pour comparer les réalisations conçues pour nos clients dans le Nord de la Géorgie.",
+    ba_t1_title: "Projet 01 • Rénovation Extérieure Complète",
+    ba_t2_title: "Projet 02 • Aménagement Extérieur & Terrasse",
     ba_tag_before: "Avant",
     ba_tag_after: "Après",
 
     // Portfolio
     port_badge: "Nos Réalisations",
     port_title: "Projets Extérieurs <span class=\"gradient-emerald\">Récents</span>",
-    port_desc: "Découvrez nos terrasses, porches fermés et charpentes dans tout l'État de Géorgie.",
+    port_desc: "Découvrez nos terrasses, porches fermés et charpentes dans le Nord de la Géorgie.",
     filter_all: "Tous les Projets",
     filter_porches: "Terrasses & Porches",
     filter_interiors: "Extensions & Béton",
@@ -292,41 +302,43 @@ const translations = {
     port4_title: "Escalier Extérieur Multi-Étages & Terrasse",
 
     // Testimonials
-    test_badge: "Avis Vérifiés",
-    test_title: "Recommandé Dans Tout l'État de <span class=\"gradient-emerald\">Géorgie</span>",
-    test1_quote: "\"Rohi Remodeling a construit notre terrasse couverte sur deux niveaux. Cela a transformé notre extérieur! Équipe très professionnelle.\"",
-    test1_name: "James & Sarah K.",
-    test1_sub: "Terrasse Couverte en Géorgie",
-    test2_quote: "\"Menuiserie de premier ordre et chantier impeccable. Notre terrasse surélevée est solide et magnifique.\"",
-    test2_name: "Michael D.",
-    test2_sub: "Terrasse Élevée en Géorgie",
+    test_badge: "Avis Clients Vérifiés",
+    test_title: "Recommandé dans le <span class=\"gradient-emerald\">Nord de la Géorgie</span>",
+    test1_quote: "\"Nous avons fait appel à Rohi Remodeling pour remplacer entièrement notre terrasse vieillissante. De la première rencontre jusqu'à la fin des travaux, ils ont été exceptionnels. Arrivant tôt et restant tard, travaillant sans relâche jusqu'à l'achèvement. Carlos et Gilary ont été d'excellents communicateurs et ont intégré avec fluidité toutes nos demandes. La nouvelle terrasse est solidement construite, sécuritaire et magnifique. Nous les recommandons vivement pour tous projets futurs!\"",
+    test1_name: "Stephen Adams",
+    test1_sub: "Avis Google Vérifié • Propriétaire",
+    test2_quote: "\"Une expérience exceptionnelle avec cette entreprise pour la construction de notre porche fermé (screened porch). La qualité de leur travail a dépassé toutes nos attentes. Dès le début, ils ont pris le temps de répondre à toutes nos questions et nous ont guidés avec de précieuses recommandations.<br><br>Professionnels, respectueux et très minutieux tout au long du projet. Ils ont pris grand soin de nos plantes et le chantier était impeccablement nettoyé chaque soir.<br><br>Le résultat est splendide et témoigne de leur fierté du travail bien fait. Nous les recommandons chaudement.\"",
+    test2_name: "Dan & Denise B.",
+    test2_sub: "Avis Google Vérifié • Propriétaire",
 
     // Contact
     contact_badge: "Contacter l'Équipe",
     contact_title: "Demandez Votre Devis <span class=\"gradient-emerald\">Gratuit Sur Place</span>",
-    contact_desc: "Au service des propriétaires dans tout l'État de Géorgie. Remplissez le formulaire ou appelez-nous.",
+    contact_desc: "Au service du Nord de la Géorgie : Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek et les environs. Remplissez le formulaire ou appelez-nous.",
     contact_phone_title: "Téléphone / SMS",
     contact_email_title: "Demande par Email",
     contact_hours_title: "Zone d'Intervention",
-    contact_hours_val: "État de Géorgie",
+    contact_hours_val: "Nord de la Géorgie (Flowery Branch, Oakwood, Gainesville, Buford, Braselton, Suwanee, Johns Creek & Environs)",
     form_name_label: "Nom Complet",
     form_name_ph: "ex: Jean Dupont",
     form_phone_label: "Téléphone",
     form_phone_ph: "(678) 629-9589",
+    form_email_label: "Adresse Email",
+    form_email_ph: "ex: jean@email.com",
     form_space_label: "Type de Projet Principal",
     form_msg_label: "Détails du Projet / Adresse",
-    form_msg_ph: "Parlez-nous de votre projet de terrasse, porche, béton ou rénovation en Géorgie...",
-    form_btn_submit: "Envoyer la Demande de Devis Gratuit",
+    form_msg_ph: "Parlez-nous de votre projet dans le Nord de la Géorgie (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
+    form_btn_submit: "Envoyer la Demande par Email",
 
     // Footer
-    footer_desc: "Entrepreneur général licencié & assuré spécialisé dans les terrasses, porches avec moustiquaires, béton et extensions en Géorgie.",
+    footer_desc: "Entrepreneur général licencié & assuré spécialisé dans les terrasses, porches avec moustiquaires, béton et extensions dans le Nord de la Géorgie.",
     footer_nav: "Navigation",
     footer_serv: "Spécialités",
     footer_contact: "Contact",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licencié & Assuré.",
-    footer_sub: "Excellence Artisanale en Géorgie",
-    toast_title: "Demande de Devis Reçue!",
-    toast_sub: "Notre équipe vous contactera sous 24h pour organiser votre visite sur place."
+    footer_sub: "Excellence Artisanale dans le Nord de la Géorgie",
+    toast_title: "Demande de Devis Prête !",
+    toast_sub: "Ouverture de votre messagerie pour envoyer à Rohiremodeling@hotmail.com..."
   }
 };
 
@@ -401,20 +413,23 @@ function initHeader() {
 }
 
 function initBeforeAfterSlider() {
-  const sliderRange = document.getElementById('baRange');
-  const sliderWrapper = document.querySelector('.ba-wrapper');
+  const wrappers = document.querySelectorAll('.ba-wrapper');
+  if (!wrappers.length) return;
 
-  if (!sliderRange || !sliderWrapper) return;
+  wrappers.forEach(sliderWrapper => {
+    const sliderRange = sliderWrapper.querySelector('.ba-slider-range');
+    if (!sliderRange) return;
 
-  function updateSliderPosition(val) {
-    sliderWrapper.style.setProperty('--slider-pos', `${val}%`);
-  }
+    function updateSliderPosition(val) {
+      sliderWrapper.style.setProperty('--slider-pos', `${val}%`);
+    }
 
-  sliderRange.addEventListener('input', (e) => {
-    updateSliderPosition(e.target.value);
+    sliderRange.addEventListener('input', (e) => {
+      updateSliderPosition(e.target.value);
+    });
+
+    updateSliderPosition(sliderRange.value || 50);
   });
-
-  updateSliderPosition(50);
 }
 
 function initPortfolioFilter() {
@@ -453,49 +468,60 @@ function initContactForm() {
 
     const name = document.getElementById('contactName')?.value.trim() || '';
     const phone = document.getElementById('contactPhone')?.value.trim() || '';
+    const email = document.getElementById('contactEmail')?.value.trim() || '';
     const spaceSelect = document.getElementById('contactSpace');
     const spaceText = spaceSelect?.options[spaceSelect.selectedIndex]?.text || '';
     const message = document.getElementById('contactMessage')?.value.trim() || '';
 
-    // WhatsApp Phone number
-    const waPhone = '16786299589';
+    // Company destination email
+    const companyEmail = 'Rohiremodeling@hotmail.com';
 
-    // Build friendly formatted message without emojis to avoid encoding issues
-    let waMsg = '';
+    let subject = '';
+    let body = '';
+
     if (currentLang === 'es') {
-      waMsg = `*Hola Rohi Remodeling! Deseo solicitar un presupuesto gratuito:*\n\n` +
-              `- *Nombre:* ${name}\n` +
-              `- *Telefono:* ${phone}\n` +
-              `- *Tipo de Proyecto:* ${spaceText}\n` +
-              (message ? `- *Detalles / Ubicacion:* ${message}\n\n` : '\n') +
-              `_Enviado desde el sitio web de Rohi Remodeling_`;
+      subject = `Solicitud de Estimacion Gratis - ${name}`;
+      body = `Hola equipo de Rohi Remodeling,\n\n` +
+             `Deseo solicitar una estimacion gratuita con la siguiente informacion:\n\n` +
+             `- Nombre: ${name}\n` +
+             `- Telefono: ${phone}\n` +
+             (email ? `- Correo Electronico: ${email}\n` : '') +
+             `- Tipo de Proyecto: ${spaceText}\n` +
+             (message ? `- Detalles / Ubicacion: ${message}\n\n` : '\n') +
+             `Enviado desde el sitio web de Rohi Remodeling`;
     } else if (currentLang === 'fr') {
-      waMsg = `*Bonjour Rohi Remodeling! Je souhaite demander un devis gratuit :*\n\n` +
-              `- *Nom:* ${name}\n` +
-              `- *Telephone:* ${phone}\n` +
-              `- *Type de Projet:* ${spaceText}\n` +
-              (message ? `- *Details / Emplacement:* ${message}\n\n` : '\n') +
-              `_Envoye depuis le site web de Rohi Remodeling_`;
+      subject = `Demande de Devis Gratuit - ${name}`;
+      body = `Bonjour l'equipe Rohi Remodeling,\n\n` +
+             `Je souhaite demander un devis gratuit avec les informations suivantes :\n\n` +
+             `- Nom : ${name}\n` +
+             `- Telephone : ${phone}\n` +
+             (email ? `- Email : ${email}\n` : '') +
+             `- Type de Projet : ${spaceText}\n` +
+             (message ? `- Details / Emplacement : ${message}\n\n` : '\n') +
+             `Envoye depuis le site web de Rohi Remodeling`;
     } else {
-      waMsg = `*Hello Rohi Remodeling! I would like to request a free estimate:*\n\n` +
-              `- *Name:* ${name}\n` +
-              `- *Phone:* ${phone}\n` +
-              `- *Project Type:* ${spaceText}\n` +
-              (message ? `- *Details / Location:* ${message}\n\n` : '\n') +
-              `_Sent from Rohi Remodeling Website_`;
+      subject = `Free Estimate Request - ${name}`;
+      body = `Hello Rohi Remodeling Team,\n\n` +
+             `I would like to request a free estimate with the following details:\n\n` +
+             `- Full Name: ${name}\n` +
+             `- Phone: ${phone}\n` +
+             (email ? `- Email: ${email}\n` : '') +
+             `- Project Type: ${spaceText}\n` +
+             (message ? `- Project Details / Location: ${message}\n\n` : '\n') +
+             `Sent from Rohi Remodeling Website`;
     }
 
-    const waUrl = `https://wa.me/${waPhone}?text=${encodeURIComponent(waMsg)}`;
+    const mailtoUrl = `mailto:${companyEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     if (toast) {
       toast.classList.add('show');
       setTimeout(() => {
         toast.classList.remove('show');
-      }, 4000);
+      }, 5000);
     }
 
-    // Open WhatsApp in new tab/window
-    window.open(waUrl, '_blank');
+    // Open default mail client
+    window.location.href = mailtoUrl;
 
     form.reset();
   });
