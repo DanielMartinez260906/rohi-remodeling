@@ -47,14 +47,14 @@ const translations = {
     serv_porch_i3: "Elevated framing and custom exterior stairs",
 
     serv_concrete_title: "Concrete Extensions & Patios",
-    serv_concrete_desc: "Durable concrete driveway expansions, decorative stamped patios, walkways, and sturdy foundations.",
+    serv_concrete_desc: "Durable concrete driveway expansions, decorative stamped patios, and walkways.",
     serv_concrete_i1: "Reinforced patio pads & driveway extensions",
     serv_concrete_i2: "Stamped and decorative concrete finishes",
     serv_concrete_i3: "Retaining walls and concrete steps",
 
     serv_interior_title: "Interior Remodeling & Additions",
     serv_interior_desc: "Home additions, basement finishing, custom carpentry, and complete interior living space renovations.",
-    serv_interior_i1: "Open-concept layouts and structural framing",
+    serv_interior_i1: "Open-concept layouts and interior renovations",
     serv_interior_i2: "Finished basements and entertainment spaces",
     serv_interior_i3: "Custom trim, doors, and interior upgrades",
 
@@ -70,7 +70,7 @@ const translations = {
     // Portfolio
     port_badge: "Featured Work",
     port_title: "Recent Outdoor <span class=\"gradient-emerald\">Projects</span>",
-    port_desc: "Take a look at our recent deck builds, screen porches, and exterior framing across North Georgia communities.",
+    port_desc: "Take a look at our recent deck builds, screen porches, and concrete walkways across North Georgia communities.",
     filter_all: "All Projects",
     filter_porches: "Decks & Porches",
     filter_interiors: "Additions & Concrete",
@@ -80,8 +80,8 @@ const translations = {
     port2_title: "Elevated Covered Deck & Staircase",
     port3_tag: "Deck Extension",
     port3_title: "Backyard Deck & Multi-Tier Steps",
-    port4_tag: "Exterior Framing",
-    port4_title: "Multi-Story Exterior Stairs & Deck",
+    port4_tag: "Concrete Walkway",
+    port4_title: "Custom Concrete Walkway & Expansion",
 
     // Testimonials
     test_badge: "Verified Client Reviews",
@@ -156,14 +156,14 @@ const translations = {
     serv_porch_i3: "Estructuras elevadas y escaleras exteriores a medida",
 
     serv_concrete_title: "Extensiones de Concreto y Patios",
-    serv_concrete_desc: "Ampliación de entradas de vehículos (driveways), patios de concreto estampado, losas reforzadas y caminos.",
+    serv_concrete_desc: "Ampliación de entradas de vehículos (driveways), patios de concreto estampado y caminos (walkways).",
     serv_concrete_i1: "Losas reforzadas para patios y driveways",
     serv_concrete_i2: "Acabados de concreto estampado decorativo",
     serv_concrete_i3: "Muros de contención y escaleras de concreto",
 
     serv_interior_title: "Remodelación Interior y Adiciones",
     serv_interior_desc: "Ampliaciones de casas, acabado de sótanos (basements), carpintería fina y renovación de espacios interiores.",
-    serv_interior_i1: "Distribución de espacios y estructura de madera",
+    serv_interior_i1: "Distribución y diseño de espacios abiertos",
     serv_interior_i2: "Sótanos terminados y salas de entretenimiento",
     serv_interior_i3: "Molduras, puertas y mejoras interiores",
 
@@ -179,7 +179,7 @@ const translations = {
     // Portfolio
     port_badge: "Trabajos Destacados",
     port_title: "Proyectos Exteriores <span class=\"gradient-emerald\">Recientes</span>",
-    port_desc: "Explora nuestros decks, porches y estructuras construidas en comunidades del Norte de Georgia.",
+    port_desc: "Explora nuestros decks, porches y trabajos en concreto construidos en comunidades del Norte de Georgia.",
     filter_all: "Todos",
     filter_porches: "Decks y Porches",
     filter_interiors: "Adiciones y Concreto",
@@ -189,8 +189,8 @@ const translations = {
     port2_title: "Deck Elevado Cubierto con Escalera",
     port3_tag: "Ampliación de Deck",
     port3_title: "Deck Posterior con Gradas Escalonadas",
-    port4_tag: "Estructura Exterior",
-    port4_title: "Escalera y Deck Elevado de Varios Pisos",
+    port4_tag: "Camino de Concreto",
+    port4_title: "Camino Lateral y Losa de Concreto",
 
     // Testimonials
     test_badge: "Reseñas Verificadas de Clientes",
@@ -265,14 +265,14 @@ const translations = {
     serv_porch_i3: "Structures surélevées et escaliers extérieurs",
 
     serv_concrete_title: "Extensions en Béton & Patios",
-    serv_concrete_desc: "Élargissement d'allées de garage, patios en béton imprimé décoratif, allées et dalles renforcées.",
+    serv_concrete_desc: "Élargissement d'allées de garage, patios en béton imprimé décoratif et allées piétonnes.",
     serv_concrete_i1: "Dalles renforcées pour patios et allées",
     serv_concrete_i2: "Finitions béton imprimé décoratif",
     serv_concrete_i3: "Murs de soutènement et marches en béton",
 
     serv_interior_title: "Rénovation Intérieure & Extensions",
     serv_interior_desc: "Agrandissements de maison, aménagement de sous-sols et rénovation complète d'espaces intérieurs.",
-    serv_interior_i1: "Aménagement d'espaces et charpente intérieure",
+    serv_interior_i1: "Aménagement et optimisation des espaces ouverts",
     serv_interior_i2: "Sous-sols finis et salles de divertissement",
     serv_interior_i3: "Menuiserie et finitions intérieures de qualité",
 
@@ -288,7 +288,7 @@ const translations = {
     // Portfolio
     port_badge: "Nos Réalisations",
     port_title: "Projets Extérieurs <span class=\"gradient-emerald\">Récents</span>",
-    port_desc: "Découvrez nos terrasses, porches fermés et charpentes dans le Nord de la Géorgie.",
+    port_desc: "Découvrez nos terrasses, porches fermés et projets en béton dans le Nord de la Géorgie.",
     filter_all: "Tous les Projets",
     filter_porches: "Terrasses & Porches",
     filter_interiors: "Extensions & Béton",
@@ -298,8 +298,8 @@ const translations = {
     port2_title: "Terrasse Élevée Couverte avec Escalier",
     port3_tag: "Extension Terrasse",
     port3_title: "Terrasse Arrière avec Marches Graduées",
-    port4_tag: "Structure Extérieure",
-    port4_title: "Escalier Extérieur Multi-Étages & Terrasse",
+    port4_tag: "Allée en Béton",
+    port4_title: "Allée Latérale & Extension en Béton",
 
     // Testimonials
     test_badge: "Avis Clients Vérifiés",
