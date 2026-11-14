@@ -92,6 +92,16 @@ const translations = {
     test2_quote: "\"We had an excellent experience with this company building our screened porch. The quality of their work and craftsmanship truly exceeded our expectations. From the beginning, they took the time to answer all of our questions and provided thoughtful recommendations that helped us make the best decisions for our home.<br><br>They were professional, respectful, and detailed-oriented throughout the entire project. They went above and beyond to protect our plants and surrounding areas, and made sure everything was cleaned up at the end of each day, which we really appreciated.<br><br>The finished porch looks fantastic, and it's clear they take pride in their work. We highly recommend them to anyone looking for quality construction/remodeling and a team you can trust.\"",
     test2_name: "Dan & Denise B.",
     test2_sub: "Google Review • Verified Homeowner",
+    test3_quote: "\"Rohi remodeled our entire home and made all my dreams come true with the outcome! They were easy to work with and very flexible when we changed our minds on things. The best part is, they are extremely reasonable with cost. Highly recommend them and made some new friends in the process.\"",
+    test3_name: "Shanda Schaefer",
+    test3_sub: "Google Review • Verified Homeowner",
+    test4_quote: "\"Rohi remodeling was great to work with and professional. They poured our sidewalk and patio and covered the patio with a roof. We love it\"",
+    test4_name: "Tabatha Edwards",
+    test4_sub: "Google Review • Verified Homeowner",
+    test5_quote: "\"ROHI delivered a great professional service by installing outdoor stairs to connect our decking to the yard. They were incredibly accommodating to our specific needs, fully waterproofing the space under the decking and handling the electrical work for a fan and light. They also installed a safety gate on the stairs, which was a great touch. The team was polite, efficient, and focused on quality. I highly recommend them!\"",
+    test5_name: "Lucie Ryan",
+    test5_sub: "Google Review • Verified Homeowner",
+    test_btn_more: "Read More Reviews on Google",
 
     // Contact
     contact_badge: "Contact the Crew",
@@ -108,6 +118,12 @@ const translations = {
     form_email_label: "Email Address",
     form_email_ph: "e.g. john@example.com",
     form_space_label: "Primary Project Type",
+    calc_space_porch: "Covered Porch / Deck",
+    calc_space_concrete: "Concrete Extension / Patio",
+    calc_space_interior: "Interior Remodel / Addition",
+    calc_space_other: "Other (Please specify)",
+    form_other_label: "Specify Project Type",
+    form_other_ph: "e.g. Pergola, Custom Framing, Painting...",
     form_msg_label: "Project Details / Location",
     form_msg_ph: "Tell us about your project in North Georgia (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
     form_btn_submit: "Send Estimate Request via Email",
@@ -201,6 +217,16 @@ const translations = {
     test2_quote: "\"Tuvimos una experiencia excelente con esta empresa construyendo nuestro porche con mosquitero (screened porch). La calidad de su trabajo y su artesanía realmente superaron nuestras expectativas. Desde el principio se tomaron el tiempo para responder todas nuestras dudas y nos dieron recomendaciones muy acertadas para tomar la mejor decisión.<br><br>Fueron profesionales, respetuosos y atentos al detalle en todo momento. Hicieron todo lo posible por proteger nuestras plantas y áreas alrededor, y se aseguraron de dejar todo limpio al final de cada día, lo cual apreciamos mucho.<br><br>El porche terminado se ve fantástico y es evidente el orgullo que sienten por su trabajo. Los recomendamos ampliamente a cualquiera que busque una construcción de calidad y un equipo de confianza.\"",
     test2_name: "Dan & Denise B.",
     test2_sub: "Google Review • Porche con Mosquiteros",
+    test3_quote: "\"¡Rohi remodeló toda nuestra casa e hizo realidad todos mis sueños con el resultado! Fue muy fácil trabajar con ellos y fueron sumamente flexibles cuando cambiamos de opinión en algunos detalles. Lo mejor de todo es que tienen precios sumamente justos y razonables. Los recomiendo al 100% y hasta hicimos nuevos amigos en el proceso.\"",
+    test3_name: "Shanda Schaefer",
+    test3_sub: "Google Review • Remodelación Completa",
+    test4_quote: "\"Rohi remodeling fue excelente y muy profesional para trabajar. Fundieron nuestra acera y patio de concreto, y cubrieron el patio con un techo. ¡Nos encanta!\"",
+    test4_name: "Tabatha Edwards",
+    test4_sub: "Google Review • Patio y Techo",
+    test5_quote: "\"ROHI brindó un servicio sumamente profesional instalando escaleras exteriores para conectar nuestro deck con el patio. Se adaptaron increíblemente a nuestras necesidades específicas, impermeabilizando por completo el espacio bajo el deck e instalando la electricidad para un ventilador y luz. También instalaron una puerta de seguridad en las escaleras, un detalle excelente. El equipo fue educado, eficiente y enfocado en la calidad. ¡Los recomiendo ampliamente!\"",
+    test5_name: "Lucie Ryan",
+    test5_sub: "Google Review • Deck y Escaleras Exteriores",
+    test_btn_more: "Ver Más Reseñas en Google",
 
     // Contact
     contact_badge: "Habla con el Equipo",
@@ -217,6 +243,12 @@ const translations = {
     form_email_label: "Correo Electrónico",
     form_email_ph: "ej: juan@correo.com",
     form_space_label: "Tipo de Proyecto Principal",
+    calc_space_porch: "Porche Cubierto / Deck",
+    calc_space_concrete: "Extensión de Concreto / Patio",
+    calc_space_interior: "Remodelación Interior / Adición",
+    calc_space_other: "Otro (Especificar)",
+    form_other_label: "Especifica tu Proyecto",
+    form_other_ph: "Ej: Pérgola, Pintura, Carpintería...",
     form_msg_label: "Detalles del Proyecto / Dirección",
     form_msg_ph: "Cuéntanos sobre tu proyecto en el Norte de Georgia (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
     form_btn_submit: "Enviar Solicitud por Correo",
@@ -310,6 +342,16 @@ const translations = {
     test2_quote: "\"Une expérience exceptionnelle avec cette entreprise pour la construction de notre porche fermé (screened porch). La qualité de leur travail a dépassé toutes nos attentes. Dès le début, ils ont pris le temps de répondre à toutes nos questions et nous ont guidés avec de précieuses recommandations.<br><br>Professionnels, respectueux et très minutieux tout au long du projet. Ils ont pris grand soin de nos plantes et le chantier était impeccablement nettoyé chaque soir.<br><br>Le résultat est splendide et témoigne de leur fierté du travail bien fait. Nous les recommandons chaudement.\"",
     test2_name: "Dan & Denise B.",
     test2_sub: "Avis Google Vérifié • Propriétaire",
+    test3_quote: "\"Rohi a rénové toute notre maison et a réalisé tous mes rêves avec le résultat! Ils ont été très faciles à côtoyer et flexibles lorsque nous changions d'avis. Le meilleur est qu'ils sont extrêmement raisonnables sur les tarifs. Je les recommande chaleureusement, nous nous sommes même fait de nouveaux amis.\"",
+    test3_name: "Shanda Schaefer",
+    test3_sub: "Avis Google Vérifié • Rénovation Complète",
+    test4_quote: "\"Une équipe formidable et très professionnelle. Ils ont coulé notre trottoir et notre patio en béton, et l'ont recouvert d'un toit. Nous adorons le résultat!\"",
+    test4_name: "Tabatha Edwards",
+    test4_sub: "Avis Google Vérifié • Patio & Toiture",
+    test5_quote: "\"ROHI a fourni un excellent service professionnel en installant des escaliers extérieurs pour relier notre terrasse au jardin. Ils ont été incroyablement attentifs à nos besoins, assurant l'étanchéité complète sous la terrasse et l'électricité pour le ventilateur et l'éclairage. L'équipe a été polie, efficace et soucieuse de la qualité. Je les recommande vivement!\"",
+    test5_name: "Lucie Ryan",
+    test5_sub: "Avis Google Vérifié • Escalier & Terrasse",
+    test_btn_more: "Voir Plus d'Avis sur Google",
 
     // Contact
     contact_badge: "Contacter l'Équipe",
@@ -326,6 +368,12 @@ const translations = {
     form_email_label: "Adresse Email",
     form_email_ph: "ex: jean@email.com",
     form_space_label: "Type de Projet Principal",
+    calc_space_porch: "Terrasse Couverte / Porche",
+    calc_space_concrete: "Extension en Béton / Patio",
+    calc_space_interior: "Rénovation Intérieure / Extension",
+    calc_space_other: "Autre (Veuillez préciser)",
+    form_other_label: "Précisez votre Projet",
+    form_other_ph: "ex: Pergola, Peinture, Menuiserie...",
     form_msg_label: "Détails du Projet / Adresse",
     form_msg_ph: "Parlez-nous de votre projet dans le Nord de la Géorgie (Flowery Branch, Oakwood, Buford, Gainesville, Suwanee, Johns Creek)...",
     form_btn_submit: "Envoyer la Demande par Email",
@@ -460,8 +508,29 @@ function initPortfolioFilter() {
 function initContactForm() {
   const form = document.getElementById('contactForm');
   const toast = document.getElementById('toastMsg');
+  const spaceSelect = document.getElementById('contactSpace');
+  const otherGroup = document.getElementById('otherSpaceGroup');
+  const otherInput = document.getElementById('contactSpaceOther');
 
   if (!form) return;
+
+  if (spaceSelect && otherGroup) {
+    spaceSelect.addEventListener('change', () => {
+      if (spaceSelect.value === 'other') {
+        otherGroup.style.display = 'block';
+        if (otherInput) {
+          otherInput.setAttribute('required', 'required');
+          otherInput.focus();
+        }
+      } else {
+        otherGroup.style.display = 'none';
+        if (otherInput) {
+          otherInput.removeAttribute('required');
+          otherInput.value = '';
+        }
+      }
+    });
+  }
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -469,8 +538,13 @@ function initContactForm() {
     const name = document.getElementById('contactName')?.value.trim() || '';
     const phone = document.getElementById('contactPhone')?.value.trim() || '';
     const email = document.getElementById('contactEmail')?.value.trim() || '';
-    const spaceSelect = document.getElementById('contactSpace');
-    const spaceText = spaceSelect?.options[spaceSelect.selectedIndex]?.text || '';
+    
+    let spaceText = spaceSelect?.options[spaceSelect.selectedIndex]?.text || '';
+    const otherVal = otherInput?.value.trim() || '';
+    if (spaceSelect?.value === 'other' && otherVal) {
+      spaceText = `${spaceText}: ${otherVal}`;
+    }
+
     const message = document.getElementById('contactMessage')?.value.trim() || '';
 
     // Company destination email
@@ -524,5 +598,8 @@ function initContactForm() {
     window.location.href = mailtoUrl;
 
     form.reset();
+    if (otherGroup) {
+      otherGroup.style.display = 'none';
+    }
   });
 }
