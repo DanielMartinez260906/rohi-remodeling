@@ -11,7 +11,7 @@ A modern, high-end presentation web application for **Rohi Remodeling**, featuri
 
 ## ✨ Features
 
-- **Dark Contrast Header**: Specialized `#0A0F1D` background and glassmorphism styling ensuring maximum visual impact for the green logo (`isotipo-sin fondo.png`).
+- **Dark Contrast Header**: Specialized `#0A0F1D` background and glassmorphism styling ensuring maximum visual impact for the green logo (`img/isotipo-sin fondo.png`).
 - **Multi-Language Support (i18n)**: Instant client-side switching between **English (EN)**, **Spanish (ES)**, and **French (FR)**.
 - **Interactive Before & After Slider**: Touch and drag comparison slider showing kitchen renovation transformations.
 - **Interactive Budget Estimator**: Real-time project cost calculator by space type (Kitchen, Bath, Whole Home, Exterior), finish level, and square footage.
@@ -25,16 +25,18 @@ A modern, high-end presentation web application for **Rohi Remodeling**, featuri
 
 ```text
 Rohi Remodeling/
-├── index.html            # Main semantic HTML structure with i18n attributes
-├── styles.css            # Custom CSS design system, dark header, and responsive layout
-├── app.js                # i18n translation engine & interactive UI logic
+├── index.html            # Main semantic HTML entry point at root
+├── README.md             # Project documentation
 ├── server.ps1            # Lightweight native PowerShell HTTP server (Port 8080)
-├── isotipo-sin fondo.png # Standalone company logo asset
-└── img/                  # High-resolution project photography
-    ├── hero.jpg
-    ├── kitchen_before.jpg
-    ├── kitchen_after.jpg
-    └── bathroom.jpg
+├── css/
+│   └── styles.css        # Custom CSS design system, dark header, and responsive layout
+├── js/
+│   └── app.js            # i18n translation engine & interactive UI logic
+└── img/                  # High-resolution project photography & brand assets
+    ├── isotipo-sin fondo.png
+    ├── 1.jpeg ... 7.jpeg
+    ├── antes 2.jpeg / despues 2.jpg
+    └── casa blanca antes.jpeg / despues.jpg
 ```
 
 ---
