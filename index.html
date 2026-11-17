@@ -187,7 +187,7 @@
       </div>
 
       <!-- Slider 1: Full Home Remodel -->
-      <div style="max-width: 960px; margin: 0 auto 16px auto;">
+      <div style="max-width: 780px; margin: 0 auto 16px auto;">
         <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--foreground); letter-spacing: 0.05em; text-transform: uppercase;">
           <i class="fa-solid fa-house" style="color: var(--primary); margin-right: 8px;"></i>
           <span data-i18n="ba_t1_title">Project 01 • Exterior Remodel & Renovation</span>
@@ -215,13 +215,13 @@
       </div>
 
       <!-- Slider 2: Porch & Outdoor Living -->
-      <div style="max-width: 960px; margin: 0 auto 16px auto;">
+      <div style="max-width: 780px; margin: 0 auto 16px auto;">
         <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--foreground); letter-spacing: 0.05em; text-transform: uppercase;">
           <i class="fa-solid fa-tree" style="color: var(--primary); margin-right: 8px;"></i>
           <span data-i18n="ba_t2_title">Project 02 • Outdoor Living & Porch Addition</span>
         </span>
       </div>
-      <div class="ba-slider-container">
+      <div class="ba-slider-container" style="margin-bottom: 50px;">
         <div class="ba-wrapper" style="--slider-pos: 50%;">
           <span class="ba-tag tag-before" data-i18n="ba_tag_before">Before</span>
           <span class="ba-tag tag-after" data-i18n="ba_tag_after">After</span>
@@ -239,6 +239,34 @@
           </div>
 
           <input type="range" min="0" max="100" value="50" class="ba-slider-range" aria-label="Before and After Range Slider 2">
+        </div>
+      </div>
+
+      <!-- Slider 3: Front Porch Cedar Columns & Railings Upgrade -->
+      <div style="max-width: 780px; margin: 0 auto 16px auto;">
+        <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--foreground); letter-spacing: 0.05em; text-transform: uppercase;">
+          <i class="fa-solid fa-columns" style="color: var(--primary); margin-right: 8px;"></i>
+          <span data-i18n="ba_t3_title">Project 03 • Front Porch Cedar Columns & Railing Upgrade</span>
+        </span>
+      </div>
+      <div class="ba-slider-container">
+        <div class="ba-wrapper" style="--slider-pos: 50%;">
+          <span class="ba-tag tag-before" data-i18n="ba_tag_before">Before</span>
+          <span class="ba-tag tag-after" data-i18n="ba_tag_after">After</span>
+          
+          <img src="img/despues 3.jpeg" alt="Front Porch Remodel After" class="ba-img-after" style="object-position: center 52%;">
+          
+          <div class="ba-img-before-wrapper">
+            <img src="img/antes 3.jpeg" alt="Front Porch Remodel Before" class="ba-img-before" style="object-position: center center;">
+          </div>
+
+          <div class="ba-handle">
+            <div class="ba-handle-button">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+          </div>
+
+          <input type="range" min="0" max="100" value="50" class="ba-slider-range" aria-label="Before and After Range Slider 3">
         </div>
       </div>
     </div>
@@ -262,6 +290,18 @@
       </div>
 
       <div class="portfolio-grid">
+        <!-- Project 1 (Image 9 - Elevated Screened Porch & Cable Railing) -->
+        <div class="portfolio-card" data-category="porches">
+          <div class="portfolio-img-box">
+            <img src="img/9.jpeg" alt="Elevated Custom Screened Porch with Cable Railings and Outdoor Stairs by Rohi Remodeling">
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category" data-i18n="port1_tag">Screened Porch</span>
+            <h3 class="portfolio-title" data-i18n="port1_title">Elevated Screened Porch & Cable Rail Deck</h3>
+            <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Suwanee, GA</span>
+          </div>
+        </div>
+
         <!-- Project 2 (Image 3) -->
         <div class="portfolio-card" data-category="porches">
           <div class="portfolio-img-box">
@@ -295,6 +335,18 @@
             <span class="portfolio-category" data-i18n="port4_tag">Concrete Walkway</span>
             <h3 class="portfolio-title" data-i18n="port4_title">Custom Concrete Walkway & Expansion</h3>
             <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Oakwood, GA</span>
+          </div>
+        </div>
+
+        <!-- Project 5 (Image 8 - Concrete Patio Slab & Control Joints) -->
+        <div class="portfolio-card" data-category="interiors">
+          <div class="portfolio-img-box">
+            <img src="img/8.jpeg" alt="Precision Concrete Slab Pour with Expansion Joints by Rohi Remodeling">
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category" data-i18n="port5_tag">Concrete Patio</span>
+            <h3 class="portfolio-title" data-i18n="port5_title">Custom Concrete Slab & Expansion Joints</h3>
+            <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Flowery Branch, GA</span>
           </div>
         </div>
       </div>
@@ -464,7 +516,13 @@
                 <option value="porch" data-i18n="calc_space_porch">Covered Porch / Deck</option>
                 <option value="concrete" data-i18n="calc_space_concrete">Concrete Extension / Patio</option>
                 <option value="interior" data-i18n="calc_space_interior">Interior Remodel / Addition</option>
+                <option value="other" data-i18n="calc_space_other">Other (Please specify)</option>
               </select>
+            </div>
+
+            <div class="form-group" id="otherSpaceGroup" style="display: none;">
+              <label for="contactSpaceOther" data-i18n="form_other_label">Specify Project Type</label>
+              <input type="text" id="contactSpaceOther" class="form-input" placeholder="e.g. Pergola, Custom Framing, Painting..." data-i18n-ph="form_other_ph">
             </div>
 
             <div class="form-group">

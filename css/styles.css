@@ -606,7 +606,7 @@ img {
 }
 
 .ba-slider-container {
-  max-width: 960px;
+  max-width: 780px;
   margin: 0 auto;
   position: relative;
   border-radius: var(--radius-sm);
@@ -622,9 +622,9 @@ img {
   --slider-pos: 50%;
   position: relative;
   width: 100%;
-  aspect-ratio: 1080 / 975;
+  aspect-ratio: 1 / 1;
   height: auto;
-  max-height: 750px;
+  max-height: 680px;
 }
 
 .ba-img-after {
@@ -1854,7 +1854,7 @@ img {
 }
 
 .ba-slider-container {
-  max-width: 960px;
+  max-width: 780px;
   margin: 0 auto;
   position: relative;
   border-radius: var(--radius-sm);
@@ -1870,9 +1870,9 @@ img {
   --slider-pos: 50%;
   position: relative;
   width: 100%;
-  aspect-ratio: 1080 / 975;
+  aspect-ratio: 1 / 1;
   height: auto;
-  max-height: 750px;
+  max-height: 680px;
 }
 
 .ba-img-after {
