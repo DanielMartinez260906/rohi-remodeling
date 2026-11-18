@@ -1235,6 +1235,126 @@ img {
   gap: 14px;
 }
 
+/* ==========================================================================
+   DEVELOPER CREDIT BAR (DAMEDIA)
+   ========================================================================== */
+.dev-credit-bar {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  padding: 14px 22px;
+  background: rgba(10, 15, 29, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.dev-credit-bar:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 24px -6px rgba(56, 189, 248, 0.2);
+}
+
+.dev-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dev-credit-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.dev-logos-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.dev-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 168, 255, 0.35));
+}
+
+.dev-logo-img {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.dev-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dev-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s var(--ease);
+}
+
+.dev-btn-wa {
+  background: rgba(37, 211, 102, 0.08);
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  color: #25D366;
+}
+
+.dev-btn-wa:hover {
+  background: #25D366;
+  color: #0A0F1D;
+  border-color: #25D366;
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.45);
+  transform: translateY(-2px);
+}
+
+.dev-btn-mail {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #38BDF8;
+}
+
+.dev-btn-mail:hover {
+  background: #38BDF8;
+  color: #0A0F1D;
+  border-color: #38BDF8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.45);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .dev-credit-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 14px;
+  }
+  .dev-actions-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 /* Toast */
 .toast-msg {
   position: fixed;
@@ -2484,6 +2604,126 @@ img {
   font-size: 0.82rem;
   flex-wrap: wrap;
   gap: 14px;
+}
+
+/* ==========================================================================
+   DEVELOPER CREDIT BAR (DAMEDIA)
+   ========================================================================== */
+.dev-credit-bar {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  padding: 14px 22px;
+  background: rgba(10, 15, 29, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.dev-credit-bar:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 24px -6px rgba(56, 189, 248, 0.2);
+}
+
+.dev-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dev-credit-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.dev-logos-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.dev-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 168, 255, 0.35));
+}
+
+.dev-logo-img {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.dev-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dev-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s var(--ease);
+}
+
+.dev-btn-wa {
+  background: rgba(37, 211, 102, 0.08);
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  color: #25D366;
+}
+
+.dev-btn-wa:hover {
+  background: #25D366;
+  color: #0A0F1D;
+  border-color: #25D366;
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.45);
+  transform: translateY(-2px);
+}
+
+.dev-btn-mail {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #38BDF8;
+}
+
+.dev-btn-mail:hover {
+  background: #38BDF8;
+  color: #0A0F1D;
+  border-color: #38BDF8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.45);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .dev-credit-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 14px;
+  }
+  .dev-actions-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 /* Toast */

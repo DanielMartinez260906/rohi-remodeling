@@ -138,6 +138,9 @@ const translations = {
     footer_contact: "Contact Info",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licensed & Insured.",
     footer_sub: "Quality Craftsmanship in North Georgia",
+    dev_label: "Website Designed & Developed by",
+    dev_wa_text: "WhatsApp: 305 323 4702",
+    dev_mail_text: "damedia12026@gmail.com",
     toast_title: "Estimate Request Ready!",
     toast_sub: "Opening your email to send to Rohiremodeling@hotmail.com..."
   },
@@ -266,6 +269,9 @@ const translations = {
     footer_contact: "Contacto",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licenciados y Asegurados.",
     footer_sub: "Calidad de Construcción en Norte de Georgia",
+    dev_label: "Sitio Web Diseñado y Desarrollado por",
+    dev_wa_text: "WhatsApp: 305 323 4702",
+    dev_mail_text: "damedia12026@gmail.com",
     toast_title: "¡Solicitud Lista!",
     toast_sub: "Abriendo tu correo para enviar a Rohiremodeling@hotmail.com..."
   },
@@ -394,6 +400,9 @@ const translations = {
     footer_contact: "Contact",
     footer_rights: "&copy; 2026 Rohi Remodeling. Licencié & Assuré.",
     footer_sub: "Excellence Artisanale dans le Nord de la Géorgie",
+    dev_label: "Site Web Conçu et Développé par",
+    dev_wa_text: "WhatsApp: 305 323 4702",
+    dev_mail_text: "damedia12026@gmail.com",
     toast_title: "Demande de Devis Prête !",
     toast_sub: "Ouverture de votre messagerie pour envoyer à Rohiremodeling@hotmail.com..."
   }
