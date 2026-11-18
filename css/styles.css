@@ -894,6 +894,8 @@ img {
   background: var(--card);
   border: 1px solid var(--border);
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--ease);
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-card:hover {
@@ -924,6 +926,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex-grow: 1;
 }
 
 .portfolio-category {
@@ -2142,6 +2145,8 @@ img {
   background: var(--card);
   border: 1px solid var(--border);
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--ease);
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-card:hover {
@@ -2172,6 +2177,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex-grow: 1;
 }
 
 .portfolio-category {
